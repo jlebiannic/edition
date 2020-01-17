@@ -1,0 +1,70 @@
+package fr.mgen.editions;
+
+import java.io.IOException;
+import java.nio.file.Path;
+import java.util.List;
+
+import fr.mgen.editions.factory.EditionFactory;
+import fr.mgen.editions.util.SystemUtil;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.extern.log4j.Log4j2;
+import net.sourceforge.argparse4j.ArgumentParsers;
+import net.sourceforge.argparse4j.inf.ArgumentParser;
+import net.sourceforge.argparse4j.inf.ArgumentParserException;
+import net.sourceforge.argparse4j.inf.Namespace;
+
+@Log4j2
+public class RegroupeEditions {
+
+
+	public static void main(String[] args) throws IOException {
+
+		Params params = getParams(args);
+
+		if (params != null) {
+			List<Path> paths = SystemUtil.getPathsFromDirs(params.getDirsNames());
+			for (Path path : paths) {
+				log.info("Traitement: " + path);
+				String fileContent = SystemUtil.getFileContent(path);
+				List<String> editionParts = SystemUtil.splitContent(fileContent, EditionFactory.DEFAUT_SAUT_DE_PAGE);
+				EditionFactory.buildFromEditionParts(editionParts);
+				String edition = EditionFactory.getEditionsRegroupee();
+				SystemUtil.writeFileWithContent(params.getResultFileName(), edition);
+			}
+		}
+	}
+
+	private static Params getParams(String[] args) {
+		Params params = null;
+		ArgumentParser parser = ArgumentParsers.newFor("RegroupeEditions").build()
+				.description("Regroupe les editions par centre dans un fichier unique.");
+		parser.addArgument("-reps")
+				.dest("reps").metavar("nom repertoire")
+				.type(String.class).nargs("+")
+				.required(true)
+				.help("liste des repertoires contenant les editions");
+		
+		parser.addArgument("-res")
+				.dest("res").metavar("nom fichier")
+				.type(String.class)
+				.required(true)
+				.help("fichier résultat contenant les editions regroupees par centre");
+		
+		try {
+			Namespace res = parser.parseArgs(args);
+			params = new Params((List<String>) (res.get("reps")), res.get("res"));
+		} catch (ArgumentParserException e) {
+			parser.handleError(e);
+		}
+
+		return params;
+	}
+
+	@Data
+	@AllArgsConstructor
+	public static class Params {
+		List<String> dirsNames;
+		String resultFileName;
+	}
+}
