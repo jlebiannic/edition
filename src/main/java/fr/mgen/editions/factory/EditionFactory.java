@@ -28,6 +28,9 @@ public final class EditionFactory {
 		// empty
 	}
 
+	/**
+	 * Traite un ensemble de parties d'édition (correspond à un fichier)
+	 */
 	public static void buildFromEditionParts(List<String> editionParts) {
 
 		MetaInfo metaInfo = null;
@@ -52,14 +55,13 @@ public final class EditionFactory {
 
 	private static void buildFromEditionPart(MetaInfo metaInfo, String part) {
 		String nomCentre = getNomCentreFromEditionPart(part);
-		EditionPart editionPart = createEditionPartForCentre(nomCentre, part);
-		editionPart.setMetaInfo(metaInfo);
+		createEditionPartForCentre(nomCentre, metaInfo, part);
 	}
 
-	private static EditionPart createEditionPartForCentre(String nomCentre, String part) {
+	private static EditionPart createEditionPartForCentre(String nomCentre, MetaInfo metaInfo, String part) {
 		Centre centre = getOrCreateCentre(nomCentre);
-		EditionPart editionPart = createEditionPart(part);
-		centre.getEditionParts().add(editionPart);
+		EditionPart editionPart = createEditionPart(metaInfo, part);
+		centre.addEditionPart(editionPart);
 
 		// Pour debug uniquement
 		Integer nbEditions = mCentreNbEditions.computeIfAbsent(nomCentre, nC -> 0);
@@ -77,8 +79,8 @@ public final class EditionFactory {
 		return new Centre(nomCentre);
 	}
 
-	private static EditionPart createEditionPart(String part) {
-		return new EditionPart(part);
+	private static EditionPart createEditionPart(MetaInfo metaInfo, String part) {
+		return new EditionPart(metaInfo, part);
 	}
 
 	private static String getNomCentreFromEditionPart(String part) {
@@ -98,8 +100,11 @@ public final class EditionFactory {
 				.collect(Collectors.toList());
 		orderedCentres.forEach(centre -> {
 			log.debug(String.format("Regroupement centre %s (%d editions)", centre.getNom(),
-					centre.getEditionParts().size()));
-			editionsGroupees.append(centre.getEditionsGroupees());
+					centre.getEditionPartsSize()));
+
+			centre.getEditions().forEach(edition -> {
+				editionsGroupees.append(edition.buildContent());
+			});
 		});
 		return editionsGroupees.toString();
 	}
