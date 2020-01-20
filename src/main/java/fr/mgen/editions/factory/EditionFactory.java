@@ -15,7 +15,7 @@ import lombok.extern.log4j.Log4j2;
 
 @Log4j2
 public final class EditionFactory {
-	public static final Pattern DEFAUT_SAUT_DE_PAGE = Pattern.compile("@      @@      @@  @@ *\\r?\\n");
+	public static final Pattern DEFAUT_SAUT_DE_PAGE = Pattern.compile("@      @@      @@  @@ .+(\\n|\\r)");
 	public static final Pattern NOM_CENTRE = Pattern.compile(" *centre +dest +: +([0-9]+)");
 
 	/** Map nom du centre / Centre */

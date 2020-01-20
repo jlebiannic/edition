@@ -28,7 +28,7 @@ public class RegroupeEditions {
 				log.info("Traitement: " + path);
 				String fileContent = SystemUtil.getFileContent(path);
 				List<String> editionParts = SystemUtil.splitContent(fileContent, EditionFactory.DEFAUT_SAUT_DE_PAGE);
-				log.debug(String.format("%d editions trouvees", editionParts.size()));
+				log.debug(String.format("%d parties trouvees (avec entête)", editionParts.size()));
 				EditionFactory.buildFromEditionParts(editionParts);
 			}
 			log.info("Regroupement ...");
