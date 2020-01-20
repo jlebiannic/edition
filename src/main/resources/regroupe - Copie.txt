@@ -5,7 +5,7 @@
 /*b1re11  monter le papier correspondantende
 /*b1re12  programme de faconnage 32ende
 /*b1re13  date  de regroupement 20/01/20ende
-/*b1re14  heure de regroupement 17h16ende
+/*b1re14  heure de regroupement 17h24ende
 /*b1re15  premiere bande regroupee = 00000ende
 /*a2$diax35$ende
 /*a2$diaa30$ende
@@ -247,7 +247,7 @@
 
 
 
- page      5                                                                                              
+ page      6                                                                                              
 
 
 
@@ -261,7 +261,7 @@
 
                                             centre de travail     001 
 
-                                                       page      5                                              
+                                                       page      6                                              
     
 
 
@@ -308,7 +308,7 @@
    le 03/06/19 a 15h18                                                                                               page :     1
    lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
    centre   dest : 001                                  d u   06 - 02 - 19                                           folio :    1
-   page impr. :      6
+   page impr. :      7
 
                       numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
 
@@ -346,7 +346,7 @@
    le 03/06/19 a 15h18                                                                                               page :     2
    lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
    centre   dest : 001                                  d u   20 - 05 - 19                                           folio :    1
-   page impr. :      7
+   page impr. :      8
 
                       numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
 
@@ -360,7 +360,7 @@
 
 
 
- page      7                                                                                              
+ page      9                                                                                              
 
 
 
@@ -374,7 +374,7 @@
 
                                             centre de travail     002 
 
-                                                       page      7                                              
+                                                       page      9                                              
     
 
 
@@ -421,7 +421,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     1
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :      8
+   page impr. :      10
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -470,7 +470,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     2
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :      9
+   page impr. :      11
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -519,7 +519,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     3
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :      10
+   page impr. :      12
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -568,7 +568,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     4
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :      11
+   page impr. :      13
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -617,7 +617,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     5
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :      12
+   page impr. :      14
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -666,7 +666,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     6
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     13
+   page impr. :     15
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -715,7 +715,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     7
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     14
+   page impr. :     16
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -764,7 +764,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     8
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     15
+   page impr. :     17
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -813,7 +813,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     9
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     16
+   page impr. :     18
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -862,7 +862,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    10
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     17
+   page impr. :     19
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -911,7 +911,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    11
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     18
+   page impr. :     20
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -960,7 +960,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    12
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     19
+   page impr. :     21
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1009,7 +1009,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    13
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     20
+   page impr. :     22
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1058,7 +1058,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    14
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     21
+   page impr. :     23
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1107,7 +1107,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    15
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     22
+   page impr. :     24
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1156,7 +1156,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    16
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     23
+   page impr. :     25
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1205,7 +1205,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    17
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     24
+   page impr. :     26
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1254,7 +1254,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    18
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     25
+   page impr. :     27
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1303,7 +1303,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    19
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     26
+   page impr. :     28
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1352,7 +1352,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    20
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     27
+   page impr. :     29
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1401,7 +1401,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    21
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     28
+   page impr. :     30
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1450,7 +1450,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    22
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     29
+   page impr. :     31
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1499,7 +1499,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    23
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     30
+   page impr. :     32
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1548,7 +1548,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    24
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     31
+   page impr. :     33
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1597,7 +1597,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    25
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     32
+   page impr. :     34
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1646,7 +1646,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    26
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     33
+   page impr. :     35
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1695,7 +1695,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    27
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     34
+   page impr. :     36
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1744,7 +1744,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    28
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     35
+   page impr. :     37
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1793,7 +1793,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    29
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     36
+   page impr. :     38
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1842,7 +1842,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    30
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     37
+   page impr. :     39
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1891,7 +1891,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    31
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     38
+   page impr. :     40
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1940,7 +1940,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    32
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     39
+   page impr. :     41
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -1989,7 +1989,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    33
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     40
+   page impr. :     42
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2038,7 +2038,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    34
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     41
+   page impr. :     43
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2087,7 +2087,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    35
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     42
+   page impr. :     44
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2136,7 +2136,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    36
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     43
+   page impr. :     45
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2185,7 +2185,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    37
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     44
+   page impr. :     46
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2234,7 +2234,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    38
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     45
+   page impr. :     47
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2283,7 +2283,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    39
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     46
+   page impr. :     48
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2332,7 +2332,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    40
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     47
+   page impr. :     49
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2381,7 +2381,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    41
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     48
+   page impr. :     50
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2430,7 +2430,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    42
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     49
+   page impr. :     51
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2479,7 +2479,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    43
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     50
+   page impr. :     52
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2528,7 +2528,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    44
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     51
+   page impr. :     53
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2577,7 +2577,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    45
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     52
+   page impr. :     54
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2626,7 +2626,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    46
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     53
+   page impr. :     55
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2675,7 +2675,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    47
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     54
+   page impr. :     56
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2724,7 +2724,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    48
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     55
+   page impr. :     57
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2773,7 +2773,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    49
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     56
+   page impr. :     58
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2822,7 +2822,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    50
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     57
+   page impr. :     59
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2871,7 +2871,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    51
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     58
+   page impr. :     60
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2920,7 +2920,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    52
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     59
+   page impr. :     61
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -2969,7 +2969,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    53
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     60
+   page impr. :     62
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -3018,7 +3018,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    54
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     61
+   page impr. :     63
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -3067,7 +3067,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    55
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     62
+   page impr. :     64
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -3116,7 +3116,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    56
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     63
+   page impr. :     65
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -3165,7 +3165,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    57
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     64
+   page impr. :     66
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -3214,7 +3214,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    58
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
-   page impr. :     65
+   page impr. :     67
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -3247,7 +3247,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    59
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  suppression etablissement
-   page impr. :     66
+   page impr. :     68
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -3270,7 +3270,7 @@
 
 
 
- page      66                                                                                              
+ page      69                                                                                              
 
 
 
@@ -3284,7 +3284,7 @@
 
                                             centre de travail     002 
 
-                                                       page      66                                              
+                                                       page      69                                              
     
 
 
@@ -3331,7 +3331,7 @@
    le 03/06/19 a 15h18                                                                                               page :     1
    lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
    centre   dest : 002                                  d u   06 - 02 - 19                                           folio :    1
-   page impr. :      67
+   page impr. :      70
 
                       numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
 
@@ -3384,7 +3384,7 @@
    le 03/06/19 a 15h18                                                                                               page :     2
    lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
    centre   dest : 002                                  d u   06 - 02 - 19                                           folio :    2
-   page impr. :      68
+   page impr. :      71
 
                       numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
 
@@ -3407,7 +3407,7 @@
    le 03/06/19 a 15h18                                                                                               page :     3
    lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
    centre   dest : 002                                  d u   20 - 05 - 19                                           folio :    1
-   page impr. :      69
+   page impr. :      72
 
                       numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
 
@@ -3442,7 +3442,7 @@
 
 
 
- page      69                                                                                              
+ page      73                                                                                              
 
 
 
@@ -3456,7 +3456,7 @@
 
                                             centre de travail     003 
 
-                                                       page      69                                              
+                                                       page      73                                              
     
 
 
@@ -3503,7 +3503,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     1
    lps10e    cin tours
    centre   dest : 003                           liste des propositions de  creation    etablissement
-   page impr. :     70
+   page impr. :     74
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -3552,7 +3552,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     2
    lps10e    cin tours
    centre   dest : 003                           liste des propositions de  creation    etablissement
-   page impr. :     71
+   page impr. :     75
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -3601,7 +3601,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     3
    lps10e    cin tours
    centre   dest : 003                           liste des propositions de  creation    etablissement
-   page impr. :     72
+   page impr. :     76
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -3625,7 +3625,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     4
    lps10e    cin tours
    centre   dest : 003                           liste des propositions de  suppression etablissement
-   page impr. :     73
+   page impr. :     77
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -3648,7 +3648,7 @@
 
 
 
- page      73                                                                                              
+ page      78                                                                                              
 
 
 
@@ -3662,7 +3662,7 @@
 
                                             centre de travail     003 
 
-                                                       page      73                                              
+                                                       page      78                                              
     
 
 
@@ -3709,7 +3709,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :     1
    lps11e    cin tours
    centre   dest : 003                           propositions  de  mise a jour                                        centre : 003
-   page impr. :      74
+   page impr. :      79
 
 
 
@@ -3744,7 +3744,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :     2
    lps11e    cin tours
    centre   dest : 003                           propositions  de  mise a jour                                        centre : 003
-   page impr. :      75
+   page impr. :      80
 
 
 
@@ -3779,7 +3779,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :     3
    lps11e    cin tours
    centre   dest : 003                           propositions  de  mise a jour                                        centre : 003
-   page impr. :      76
+   page impr. :      81
 
 
 
@@ -3814,7 +3814,7 @@
 
 
 
- page      76                                                                                              
+ page      82                                                                                              
 
 
 
@@ -3828,7 +3828,7 @@
 
                                             centre de travail     004 
 
-                                                       page      76                                              
+                                                       page      82                                              
     
 
 
@@ -3875,7 +3875,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     1
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     77
+   page impr. :     83
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -3924,7 +3924,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     2
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     78
+   page impr. :     84
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -3973,7 +3973,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     3
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     79
+   page impr. :     85
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4022,7 +4022,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     4
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     80
+   page impr. :     86
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4071,7 +4071,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     5
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     81
+   page impr. :     87
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4120,7 +4120,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     6
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     82
+   page impr. :     88
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4169,7 +4169,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     7
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     83
+   page impr. :     89
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4218,7 +4218,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     8
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     84
+   page impr. :     90
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4267,7 +4267,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     9
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     85
+   page impr. :     91
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4316,7 +4316,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    10
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     86
+   page impr. :     92
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4365,7 +4365,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    11
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     87
+   page impr. :     93
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4414,7 +4414,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    12
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     88
+   page impr. :     94
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4463,7 +4463,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    13
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     89
+   page impr. :     95
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4512,7 +4512,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    14
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     90
+   page impr. :     96
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4561,7 +4561,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    15
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     91
+   page impr. :     97
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4610,7 +4610,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    16
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     92
+   page impr. :     98
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4659,7 +4659,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    17
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     93
+   page impr. :     99
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4708,7 +4708,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    18
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     94
+   page impr. :     100
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4757,7 +4757,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    19
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     95
+   page impr. :     101
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4806,7 +4806,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    20
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     96
+   page impr. :     102
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4855,7 +4855,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    21
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
-   page impr. :     97
+   page impr. :     103
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4888,7 +4888,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    22
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  suppression etablissement
-   page impr. :     98
+   page impr. :     104
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4937,7 +4937,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    23
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  suppression etablissement
-   page impr. :     99
+   page impr. :     105
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -4986,7 +4986,7 @@
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :    24
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  suppression etablissement
-   page impr. :     100
+   page impr. :     106
 
    etablis             raison sociale                           donnees p.s.h.                             domiciliation
 
@@ -5054,7 +5054,7 @@
 
                                     fichier cree le             = 27/05/19  
 
- page      100                                                                                              
+ page      107                                                                                              
 
 
 
@@ -5068,7 +5068,7 @@
 
                                             centre de travail     004 
 
-                                                       page      100                                              
+                                                       page      107                                              
     
 
 
@@ -5115,7 +5115,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :     1
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :      101
+   page impr. :      108
 
 
 
@@ -5150,7 +5150,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :     2
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :      102
+   page impr. :      109
 
 
 
@@ -5185,7 +5185,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :     3
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :      103
+   page impr. :      110
 
 
 
@@ -5220,7 +5220,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :     4
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :      104
+   page impr. :      111
 
 
 
@@ -5255,7 +5255,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :     5
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :      105
+   page impr. :      112
 
 
 
@@ -5290,7 +5290,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :     6
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :      106
+   page impr. :      113
 
 
 
@@ -5325,7 +5325,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :     7
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :     107
+   page impr. :     114
 
 
 
@@ -5360,7 +5360,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :     8
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :     108
+   page impr. :     115
 
 
 
@@ -5395,7 +5395,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :     9
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :     109
+   page impr. :     116
 
 
 
@@ -5430,7 +5430,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :    10
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :     110
+   page impr. :     117
 
 
 
@@ -5465,7 +5465,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :    11
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :     111
+   page impr. :     118
 
 
 
@@ -5500,7 +5500,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :    12
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :     112
+   page impr. :     119
 
 
 
@@ -5535,7 +5535,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :    13
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :     113
+   page impr. :     120
 
 
 
@@ -5570,7 +5570,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :    14
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :     114
+   page impr. :     121
 
 
 
@@ -5605,7 +5605,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :    15
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :     115
+   page impr. :     122
 
 
 
@@ -5640,7 +5640,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :    16
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :     116
+   page impr. :     123
 
 
 
@@ -5675,7 +5675,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :    17
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :     117
+   page impr. :     124
 
 
 
@@ -5710,7 +5710,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :    18
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :     118
+   page impr. :     125
 
 
 
@@ -5745,7 +5745,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :    19
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :     119
+   page impr. :     126
 
 
 
@@ -5780,7 +5780,7 @@
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :    20
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
-   page impr. :     120
+   page impr. :     127
 
 
 
@@ -5842,7 +5842,7 @@
 
                                     fichier cree le             = 27/05/19  
 
- page      120                                                                                              
+ page      128                                                                                              
 
 
 
@@ -5856,7 +5856,7 @@
 
                                             centre de travail     004 
 
-                                                       page      120                                              
+                                                       page      128                                              
     
 
 
@@ -5903,7 +5903,7 @@
    le 03/06/19 a 15h18                                                                                               page :     1
    lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
    centre   dest : 004                                  d u   06 - 02 - 19                                           folio :    1
-   page impr. :      121
+   page impr. :      129
 
                       numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
 
@@ -5954,7 +5954,7 @@
    le 03/06/19 a 15h18                                                                                               page :     2
    lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
    centre   dest : 004                                  d u   06 - 02 - 19                                           folio :    2
-   page impr. :      122
+   page impr. :      130
 
                       numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
 
@@ -6014,7 +6014,7 @@
    le 03/06/19 a 15h18                                                                                               page :     3
    lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
    centre   dest : 004                                  d u   06 - 02 - 19                                           folio :    3
-   page impr. :      123
+   page impr. :      131
 
                       numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
 

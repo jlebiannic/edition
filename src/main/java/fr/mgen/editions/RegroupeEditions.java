@@ -32,7 +32,7 @@ public class RegroupeEditions {
 				EditionFactory.buildFromEditionParts(editionParts, path);
 			}
 			log.info("Regroupement ...");
-			String edition = EditionFactory.getEditionsRegroupee();
+			String edition = EditionFactory.buildEditionsRegroupee();
 			SystemUtil.writeFileWithContent(params.getResultFileName(), edition);
 			log.info("Fin.");
 		}

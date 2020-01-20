@@ -29,10 +29,14 @@ public final class EditionFactory {
 	public static final String ENTETE_FICHIER_FORMAT = "/*b1re05    %s %s 000 001 0000 ende";
 
 	private static String headerTemplate;
-	private static String pageTemplate;
+	private static String pageHeaderTemplate;
+	private static String pageBottom;
+	private static String pageLastBottom;
 	static {
 		headerTemplate = SystemUtil.toString(EditionFactory.class.getResourceAsStream("/templates/fileHeaderTpl.txt"));
-		pageTemplate = SystemUtil.toString(EditionFactory.class.getResourceAsStream("/templates/pageHeaderTpl.txt"));
+		pageHeaderTemplate = SystemUtil.toString(EditionFactory.class.getResourceAsStream("/templates/pageHeaderTpl.txt"));
+		pageBottom = SystemUtil.toString(EditionFactory.class.getResourceAsStream("/templates/pageBottom.txt"));
+		pageLastBottom = SystemUtil.toString(EditionFactory.class.getResourceAsStream("/templates/pageLastBottom.txt"));
 	}
 
 	/** Map nom du centre / Centre */
@@ -133,7 +137,7 @@ public final class EditionFactory {
 		return nomCentre;
 	}
 
-	public static String getEditionsRegroupee() {
+	public static String buildEditionsRegroupee() {
 		StringBuilderPlus editionsGroupees = new StringBuilderPlus();
 		int numPage = 1;
 		LocalDateTime now = LocalDateTime.now();
@@ -151,13 +155,20 @@ public final class EditionFactory {
 			log.debug(String.format("Regroupement centre %s (%d editions)", centre.getNom(),
 					centre.getEditionPartsSize()));
 
+			int cpt = 0;
 			for (Edition edition : centre.getEditions()) {
 				MetaInfo metaInfo = edition.getMetaInfo();
 				editionsGroupees.append(
 						buildPageHeader(numPage, centre.getNom(), metaInfo.getTitreEtat(), metaInfo.getFileName(), date,
 								type));
 				editionsGroupees.append(edition.buildContent(numPage + 1));
+				if (cpt == centre.getEditions().size() - 1) {
+					editionsGroupees.append(pageLastBottom);
+				} else {
+					editionsGroupees.append(pageBottom);
+				}
 				numPage += edition.getEditionParts().size() + 1;
+				cpt++;
 			}
 		}
 
@@ -166,7 +177,7 @@ public final class EditionFactory {
 
 	private static String buildPageHeader(int numPage, String nom, String titreEtat, String fileName, String date,
 			String type) {
-		return String.format(pageTemplate, numPage, nom, numPage, titreEtat, fileName, date, type);
+		return String.format(pageHeaderTemplate, numPage, nom, numPage, titreEtat, fileName, date, type);
 	}
 
 	private static String buildHeader(String date, String heure, String type) {

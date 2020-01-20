@@ -1,11 +1,11 @@
 /*b1re05    lps10e x35 000 001 0000 ende
-/*b1re05    lps11e x35 000 001 0000 ende
+/*b1re05    lps11e x37 000 001 0000 ende
 /*b1re05    lmj03e x35 000 001 0000 ende
 /*b1re10  edition format no 03 ..........ende
 /*b1re11  monter le papier correspondantende
 /*b1re12  programme de faconnage 32ende
 /*b1re13  date  de regroupement 20/01/20ende
-/*b1re14  heure de regroupement 17h24ende
+/*b1re14  heure de regroupement 17h59ende
 /*b1re15  premiere bande regroupee = 00000ende
 /*a2$diax35$ende
 /*a2$diaa30$ende
@@ -13,6 +13,7 @@
                                           @@@                                                                            
 
 @      @@      @@  @@          @@
+
 
  page      1                                                                                              
 
@@ -246,6 +247,13 @@
      total section (suppression + creation) :       13  
 
 
+/*a2$diaa30$ende
+/*a6##3005001ende
+                                               @@@                                                                       
+
+@      @@      @@                
+    
+
 
  page      6                                                                                              
 
@@ -357,6 +365,13 @@
                                            - nbr mvt du jour :    2
 
                                            - nbr mvt section :    4  
+
+
+/*a2$dias21$ende
+/*a6##3005001ende
+    
+
+@      @@      @@  @@          @@
 
 
 
@@ -3269,6 +3284,13 @@
      total section (suppression + creation) :      231  
 
 
+/*a2$diaa30$ende
+/*a6##3005001ende
+                                               @@@                                                                       
+
+@      @@      @@                
+    
+
 
  page      69                                                                                              
 
@@ -3439,6 +3461,13 @@
                                            - nbr mvt du jour :    7
 
                                            - nbr mvt section :   12  
+
+
+/*a2$dias21$ende
+/*a6##3005001ende
+    
+
+@      @@      @@  @@          @@
 
 
 
@@ -3647,6 +3676,13 @@
      total section (suppression + creation) :       10  
 
 
+/*a2$diaa30$ende
+/*a6##3005001ende
+                                               @@@                                                                       
+
+@      @@      @@                
+    
+
 
  page      78                                                                                              
 
@@ -3811,6 +3847,13 @@
 
 
    t o t a l  s e c t i o n  :         3  
+
+
+/*a2$dias21$ende
+/*a6##3005001ende
+    
+
+@      @@      @@  @@          @@
 
 
 
@@ -5053,6 +5096,13 @@
                                     titre de l'etat               p.s.h. : prop. creat.et suppr.
 
                                     fichier cree le             = 27/05/19  
+/*a2$diaa30$ende
+/*a6##3005001ende
+                                               @@@                                                                       
+
+@      @@      @@                
+    
+
 
  page      107                                                                                              
 
@@ -5841,6 +5891,13 @@
                                     titre de l'etat               p.s.h. : propositions modif.  
 
                                     fichier cree le             = 27/05/19  
+/*a2$diaa30$ende
+/*a6##3005001ende
+                                               @@@                                                                       
+
+@      @@      @@                
+    
+
 
  page      128                                                                                              
 
@@ -6054,3 +6111,11 @@
                                     titre de l'etat               *** mouvements de prades  *** 
 
                                     fichier cree le             = 03/06/19  
+/*a2$dias21$ende
+/*a6##3005001ende
+    
+
+@      @@      @@  @@          @@
+
+
+
