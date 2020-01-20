@@ -1,0 +1,12 @@
+%s/*b1re10  edition format no 03 ..........ende
+/*b1re11  monter le papier correspondantende
+/*b1re12  programme de faconnage 32ende
+/*b1re13  date  de regroupement %sende
+/*b1re14  heure de regroupement %sende
+/*b1re15  premiere bande regroupee = 00000ende
+/*a2$dia%s$ende
+/*a2$diaa30$ende
+/*a6##3005001ende
+                                          @@@                                                                            
+
+@      @@      @@  @@          @@

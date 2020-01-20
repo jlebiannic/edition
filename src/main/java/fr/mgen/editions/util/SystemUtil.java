@@ -1,6 +1,7 @@
 package fr.mgen.editions.util;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -45,6 +46,14 @@ public final class SystemUtil {
 
 	public static void writeFileWithContent(String resultFileName, String content) throws IOException {
 		Files.write(Paths.get(resultFileName), content.getBytes());
+	}
+
+	public static String toString(InputStream inputStream) {
+		try {
+			return new String(inputStream.readAllBytes());
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
 	}
 }
 

@@ -3,6 +3,7 @@ package fr.mgen.editions.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import fr.mgen.editions.util.StringBuilderPlus;
 import lombok.Data;
 
 @Data
@@ -16,9 +17,8 @@ public class Edition {
 	}
 
 	public String buildContent() {
-		StringBuilder editionContent = new StringBuilder();
-		editionParts
-				.forEach(part -> editionContent.append(part.getContent()).append(System.getProperty("line.separator")));
+		StringBuilderPlus editionContent = new StringBuilderPlus();
+		editionParts.forEach(part -> editionContent.appendLine(part.getContent()));
 		return editionContent.toString();
 	}
 
