@@ -1,10 +1,12 @@
 package fr.mgen.editions.factory;
 
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 import fr.mgen.editions.model.Centre;
 import fr.mgen.editions.model.EditionPart;
@@ -55,7 +57,7 @@ public final class EditionFactory {
 	}
 
 	private static Centre getOrCreateCentre(String nomCentre) {
-		return mCentre.computeIfAbsent(nomCentre, n -> createCentre(n));
+		return mCentre.computeIfAbsent(nomCentre, EditionFactory::createCentre);
 	}
 
 	private static Centre createCentre(String nomCentre) {
@@ -78,8 +80,15 @@ public final class EditionFactory {
 	}
 
 	public static String getEditionsRegroupee() {
-		// TODO Auto-generated method stub
-		return "todo";
+		StringBuilder editionsGroupees = new StringBuilder();
+		List<Centre> orderedCentres = mCentre.values().stream().sorted(Comparator.comparing(Centre::getNom))
+				.collect(Collectors.toList());
+		orderedCentres.forEach(centre -> {
+			log.debug(String.format("Regroupement centre %s (%d editions)", centre.getNom(),
+					centre.getEditionParts().size()));
+			editionsGroupees.append(centre.getEditionsGroupees());
+		});
+		return editionsGroupees.toString();
 	}
 
 }

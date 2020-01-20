@@ -16,4 +16,12 @@ public class Centre {
 		this.nom = nom;
 	}
 
+	public String getEditionsGroupees() {
+		StringBuilder editionsGroupees = new StringBuilder();
+		this.getEditionParts().forEach(part -> {
+			editionsGroupees.append(part.getContent()).append(System.getProperty("line.separator"));
+		});
+		return editionsGroupees.toString();
+	}
+
 }

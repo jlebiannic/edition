@@ -28,10 +28,11 @@ public class RegroupeEditions {
 				log.info("Traitement: " + path);
 				String fileContent = SystemUtil.getFileContent(path);
 				List<String> editionParts = SystemUtil.splitContent(fileContent, EditionFactory.DEFAUT_SAUT_DE_PAGE);
+				log.debug(String.format("%d editions trouvees", editionParts.size()));
 				EditionFactory.buildFromEditionParts(editionParts);
-				String edition = EditionFactory.getEditionsRegroupee();
-				SystemUtil.writeFileWithContent(params.getResultFileName(), edition);
 			}
+			String edition = EditionFactory.getEditionsRegroupee();
+			SystemUtil.writeFileWithContent(params.getResultFileName(), edition);
 		}
 	}
 
