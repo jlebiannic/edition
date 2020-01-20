@@ -1,0 +1,57 @@
+
+ page      %d                                                                                              
+
+
+
+    
+
+
+
+
+
+
+
+                                            centre de travail     %s 
+
+                                                       page      %d                                              
+    
+
+
+
+                                                                  %s                       
+                                                                                                                      
+                                                                                                                      
+                                                                              %s    
+
+
+
+
+    
+
+
+
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+
+
+
+
+    
+
+
+
+
+
+
+
+         reference du traitement          0000
+
+         date d'edition                   %s        
+
+    /*a2$dia%s$ende
+                                          @@@                                                                            
+
+@      @@      @@  @@            
+

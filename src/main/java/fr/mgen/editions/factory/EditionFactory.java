@@ -1,6 +1,5 @@
 package fr.mgen.editions.factory;
 
-import java.io.InputStream;
 import java.nio.file.Path;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -14,6 +13,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 import fr.mgen.editions.model.Centre;
+import fr.mgen.editions.model.Edition;
 import fr.mgen.editions.model.EditionPart;
 import fr.mgen.editions.model.MetaInfo;
 import fr.mgen.editions.util.StringBuilderPlus;
@@ -27,8 +27,13 @@ public final class EditionFactory {
 	public static final Pattern NOM_CENTRE = Pattern.compile(" *centre +dest +: +([0-9]+)");
 
 	public static final String ENTETE_FICHIER_FORMAT = "/*b1re05    %s %s 000 001 0000 ende";
-	public static final InputStream ENTETE_FICHIER_TEMPLATE = EditionFactory.class
-			.getResourceAsStream("/templates/fileHeaderTpl.txt");
+
+	private static String headerTemplate;
+	private static String pageTemplate;
+	static {
+		headerTemplate = SystemUtil.toString(EditionFactory.class.getResourceAsStream("/templates/fileHeaderTpl.txt"));
+		pageTemplate = SystemUtil.toString(EditionFactory.class.getResourceAsStream("/templates/pageHeaderTpl.txt"));
+	}
 
 	/** Map nom du centre / Centre */
 	private static Map<String, Centre> mCentre = new HashMap<>();
@@ -37,6 +42,8 @@ public final class EditionFactory {
 	private static Map<String, Integer> mCentreNbEditions = null;
 
 	private static List<FileInfo> fileInfos = new ArrayList<>();
+
+	private static int order = 0;
 
 	@Data
 	public static class FileInfo {
@@ -67,7 +74,8 @@ public final class EditionFactory {
 		fileInfos.add(fileInfo);
 
 		if (!editionParts.isEmpty()) {
-			metaInfo = createMetaInfo(editionParts.remove(0), fileName);
+			metaInfo = createMetaInfo(editionParts.remove(0), fileName, order);
+			order++;
 			fileInfo.setNumEdiaDemande(metaInfo.getNumEdiaDemande());
 		} else {
 			log.warn("Pas d'édition trouvée");
@@ -80,8 +88,8 @@ public final class EditionFactory {
 		log.debug("-> Nombre d'editions par centre trouvees: " + mCentreNbEditions);
 	}
 
-	private static MetaInfo createMetaInfo(String str, String fileName) {
-		return new MetaInfo(str, fileName);
+	private static MetaInfo createMetaInfo(String str, String fileName, int order) {
+		return new MetaInfo(str, fileName, order);
 	}
 
 	private static void buildFromEditionPart(MetaInfo metaInfo, String part) {
@@ -127,35 +135,48 @@ public final class EditionFactory {
 
 	public static String getEditionsRegroupee() {
 		StringBuilderPlus editionsGroupees = new StringBuilderPlus();
+		int numPage = 1;
+		LocalDateTime now = LocalDateTime.now();
+		String date = now.format(DateTimeFormatter.ofPattern("dd/MM/yy"));
+		String heure = now.format(DateTimeFormatter.ofPattern("HH:mm")).replace(":", "h");
+		String type = fileInfos.isEmpty() ? "x35" : fileInfos.get(0).getNumEdiaDemande();
 
-		editionsGroupees.append(buildHeader());
+		editionsGroupees.append(buildHeader(date, heure, type));
 
 		// Parcours des centres
 		List<Centre> orderedCentres = mCentre.values().stream().sorted(Comparator.comparing(Centre::getNom))
 				.collect(Collectors.toList());
-		orderedCentres.forEach(centre -> {
+
+		for (Centre centre : orderedCentres) {
 			log.debug(String.format("Regroupement centre %s (%d editions)", centre.getNom(),
 					centre.getEditionPartsSize()));
 
-			centre.getEditions().forEach(edition -> {
-				editionsGroupees.append(edition.buildContent());
-			});
-		});
+			for (Edition edition : centre.getEditions()) {
+				MetaInfo metaInfo = edition.getMetaInfo();
+				editionsGroupees.append(
+						buildPageHeader(numPage, centre.getNom(), metaInfo.getTitreEtat(), metaInfo.getFileName(), date,
+								type));
+				editionsGroupees.append(edition.buildContent(numPage + 1));
+				numPage += edition.getEditionParts().size() + 1;
+			}
+		}
+
 		return editionsGroupees.toString();
 	}
 
-	private static String buildHeader() {
+	private static String buildPageHeader(int numPage, String nom, String titreEtat, String fileName, String date,
+			String type) {
+		return String.format(pageTemplate, numPage, nom, numPage, titreEtat, fileName, date, type);
+	}
+
+	private static String buildHeader(String date, String heure, String type) {
 		StringBuilderPlus sbFilesInfos = new StringBuilderPlus();
 		fileInfos.forEach(fileInfo -> {
 			sbFilesInfos.appendLine(
 					String.format(ENTETE_FICHIER_FORMAT, fileInfo.getFileName(), fileInfo.getNumEdiaDemande()));
 		});
 
-		LocalDateTime now = LocalDateTime.now();
-		String date = now.format(DateTimeFormatter.ofPattern("dd/MM/yy"));
-		String heure = now.format(DateTimeFormatter.ofPattern("HH:mm")).replace(":", "h");
-		String type = fileInfos.isEmpty() ? "x35" : fileInfos.get(0).getNumEdiaDemande();
-		return String.format(SystemUtil.toString(ENTETE_FICHIER_TEMPLATE), sbFilesInfos.toString(), date, heure, type);
+		return String.format(headerTemplate, sbFilesInfos.toString(), date, heure, type);
 	}
 
 }

@@ -28,7 +28,7 @@ public class Centre {
 	public List<Edition> getEditions() {
 		// Tri sur le titre des méta infos
 		return mMetaInfoEditionParts.entrySet().stream()
-				.sorted(Map.Entry.comparingByKey(Comparator.comparing(MetaInfo::getTitreEtat)))
+				.sorted(Map.Entry.comparingByKey(Comparator.comparing(MetaInfo::getOrder)))
 				.map(Entry<MetaInfo, Edition>::getValue)
 				.collect(Collectors.toList());
 	}
