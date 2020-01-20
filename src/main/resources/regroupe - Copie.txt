@@ -1,61 +1,5 @@
 
 
-   le 03/06/19 a 15h18                                                                                               page :     1
-   lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
-   centre   dest : 001                                  d u   06 - 02 - 19                                           folio :    1
-   page impr. :      1
-
-                      numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
-
-                   01 1 80592 6   fanara          d       cr    13h17     51   571       001
-
-                     - avant mise a jour                                                                              
-                                                                                                 
-                                                                                                                      
-                                                                                                 
-
-                     - apres mise a jour                           domiciliation  : 30004  00682  00010375847  59     
-                                               bnpparb annecy royale     m fanara benoit         
-
-                                                                                                                      
-                                                                                                 
-
-                   01 2 00402 4   pharmaci        d       mo    13h20     51   571       002
-
-                     - avant mise a jour                           domiciliation  : 10096  18041  00040935901  02     
-                                               lb ferney voltaire         mme sophie duret       
-                                                                                                                      
-                                                                                                 
-
-                     - apres mise a jour                           domiciliation  : 16807  00401  36360233211  92     
-                                               bpaura lyon cordeliers    selassadrd pharmagalt   
-
-                                                                                                                      
-                                                                                                 
-
-                                           - nbr mvt du jour :    2  
-
-
-
-
-   le 03/06/19 a 15h18                                                                                               page :     2
-   lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
-   centre   dest : 001                                  d u   20 - 05 - 19                                           folio :    1
-   page impr. :      2
-
-                      numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
-
-                   01 4 01040 9   martin                  mo    14h23     51   176       001
-
-                   01 4 01040 9   martin                  mo    14h24     51   176       002
-
-                                           - nbr mvt du jour :    2
-
-                                           - nbr mvt section :    4  
-
-
-
-
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     1
    lps10e    cin tours
    centre   dest : 001                           liste des propositions de  creation    etablissement
@@ -234,115 +178,56 @@
 
    le 03/06/19 a 15h18                                                                                               page :     1
    lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
-   centre   dest : 002                                  d u   06 - 02 - 19                                           folio :    1
-   page impr. :      3
+   centre   dest : 001                                  d u   06 - 02 - 19                                           folio :    1
+   page impr. :      1
 
                       numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
 
-                   02 1 01877 5   segard          d       mo    08h28     75   535       001
+                   01 1 80592 6   fanara          d       cr    13h17     51   571       001
 
-                     - avant mise a jour                           domiciliation  : 10206  02243  98747987971  23     
-                                               crca                       selas selra            
+                     - avant mise a jour                                                                              
+                                                                                                 
                                                                                                                       
                                                                                                  
 
-                     - apres mise a jour                           domiciliation  : 10206  02243  98747988013  91     
-                                               crca st quentin           selas selsi             
+                     - apres mise a jour                           domiciliation  : 30004  00682  00010375847  59     
+                                               bnpparb annecy royale     m fanara benoit         
 
                                                                                                                       
                                                                                                  
 
-                   02 1 01904 7   chokouhi                mo    13h39     81   496       005
+                   01 2 00402 4   pharmaci        d       mo    13h20     51   571       002
 
-                   02 1 02460 9   robache         d       mo    08h28     75   535       002
-
-                     - avant mise a jour                           domiciliation  : 10206  02243  98747987971  23     
-                                               crca                       selas selra            
+                     - avant mise a jour                           domiciliation  : 10096  18041  00040935901  02     
+                                               lb ferney voltaire         mme sophie duret       
                                                                                                                       
                                                                                                  
 
-                     - apres mise a jour                           domiciliation  : 10206  02243  98747988013  91     
-                                               crca st quentin           selas selsi             
-
-                                                                                                                      
-                                                                                                 
-
-                   02 1 03001 0   adams           d       mo    08h29     75   535       003
-
-                     - avant mise a jour                           domiciliation  : 10206  02243  98747987971  23     
-                                               crca                       selas selra            
-                                                                                                                      
-                                                                                                 
-
-                     - apres mise a jour                           domiciliation  : 10206  02243  98747988013  91     
-                                               crca st quentin           selas selsi             
+                     - apres mise a jour                           domiciliation  : 16807  00401  36360233211  92     
+                                               bpaura lyon cordeliers    selassadrd pharmagalt   
 
                                                                                                                       
                                                                                                  
 
-                   02 7 00096 7   constant        d       mo    11h31     77   383       004  
+                                           - nbr mvt du jour :    2  
 
 
 
 
    le 03/06/19 a 15h18                                                                                               page :     2
    lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
-   centre   dest : 002                                  d u   06 - 02 - 19                                           folio :    2
-   page impr. :      4
+   centre   dest : 001                                  d u   20 - 05 - 19                                           folio :    1
+   page impr. :      2
 
-                      numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
+                      numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
 
-                     - avant mise a jour                           domiciliation  : 15629  02646  00020375801  39     
-                                               ccm                        mme constant manon     
-                                                                                                                      
-                                                                                                 
+                   01 4 01040 9   martin                  mo    14h23     51   176       001
 
-                     - apres mise a jour                           domiciliation  : 15629  02646  00020401801  27     
-                                               ccm                       mme constant manon      
+                   01 4 01040 9   martin                  mo    14h24     51   176       002
 
-                                                                                                                      
-                                                                                                 
+                                           - nbr mvt du jour :    2
 
-                                           - nbr mvt du jour :    5  
-
-
-
-
-   le 03/06/19 a 15h18                                                                                               page :     3
-   lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
-   centre   dest : 002                                  d u   20 - 05 - 19                                           folio :    1
-   page impr. :      5
-
-                      numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
-
-                   02 1 80683 1   segard                  mo    07h54     75   535       001
-
-                   02 1 80683 1   segard                  mo    07h56     75   535       004
-
-                   02 1 80684 9   robache                 mo    07h55     75   535       003
-
-                   02 1 80684 9   robache                 mo    07h57     75   535       006
-
-                   02 1 80685 6   adams                   mo    07h54     75   535       002
-
-                   02 1 80685 6   adams                   mo    07h56     75   535       005
-
-                   02 6 12534 4   trohel          d       cr    12h01     75   535       007
-
-                     - avant mise a jour                                                                              
-                                                                                                 
-                                                                                                                      
-                                                                                                 
-
-                     - apres mise a jour                           domiciliation  : 40618  80324  00040641093  66     
-                                               boursorama                mme trohel anais        
-
-                                                                                                                      
-                                                                                                 
-
-                                           - nbr mvt du jour :    7
-
-                                           - nbr mvt section :   12  
+                                           - nbr mvt section :    4  
 
 
 
@@ -3200,6 +3085,121 @@
 
 
 
+   le 03/06/19 a 15h18                                                                                               page :     1
+   lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
+   centre   dest : 002                                  d u   06 - 02 - 19                                           folio :    1
+   page impr. :      3
+
+                      numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
+
+                   02 1 01877 5   segard          d       mo    08h28     75   535       001
+
+                     - avant mise a jour                           domiciliation  : 10206  02243  98747987971  23     
+                                               crca                       selas selra            
+                                                                                                                      
+                                                                                                 
+
+                     - apres mise a jour                           domiciliation  : 10206  02243  98747988013  91     
+                                               crca st quentin           selas selsi             
+
+                                                                                                                      
+                                                                                                 
+
+                   02 1 01904 7   chokouhi                mo    13h39     81   496       005
+
+                   02 1 02460 9   robache         d       mo    08h28     75   535       002
+
+                     - avant mise a jour                           domiciliation  : 10206  02243  98747987971  23     
+                                               crca                       selas selra            
+                                                                                                                      
+                                                                                                 
+
+                     - apres mise a jour                           domiciliation  : 10206  02243  98747988013  91     
+                                               crca st quentin           selas selsi             
+
+                                                                                                                      
+                                                                                                 
+
+                   02 1 03001 0   adams           d       mo    08h29     75   535       003
+
+                     - avant mise a jour                           domiciliation  : 10206  02243  98747987971  23     
+                                               crca                       selas selra            
+                                                                                                                      
+                                                                                                 
+
+                     - apres mise a jour                           domiciliation  : 10206  02243  98747988013  91     
+                                               crca st quentin           selas selsi             
+
+                                                                                                                      
+                                                                                                 
+
+                   02 7 00096 7   constant        d       mo    11h31     77   383       004  
+
+
+
+
+   le 03/06/19 a 15h18                                                                                               page :     2
+   lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
+   centre   dest : 002                                  d u   06 - 02 - 19                                           folio :    2
+   page impr. :      4
+
+                      numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
+
+                     - avant mise a jour                           domiciliation  : 15629  02646  00020375801  39     
+                                               ccm                        mme constant manon     
+                                                                                                                      
+                                                                                                 
+
+                     - apres mise a jour                           domiciliation  : 15629  02646  00020401801  27     
+                                               ccm                       mme constant manon      
+
+                                                                                                                      
+                                                                                                 
+
+                                           - nbr mvt du jour :    5  
+
+
+
+
+   le 03/06/19 a 15h18                                                                                               page :     3
+   lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
+   centre   dest : 002                                  d u   20 - 05 - 19                                           folio :    1
+   page impr. :      5
+
+                      numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
+
+                   02 1 80683 1   segard                  mo    07h54     75   535       001
+
+                   02 1 80683 1   segard                  mo    07h56     75   535       004
+
+                   02 1 80684 9   robache                 mo    07h55     75   535       003
+
+                   02 1 80684 9   robache                 mo    07h57     75   535       006
+
+                   02 1 80685 6   adams                   mo    07h54     75   535       002
+
+                   02 1 80685 6   adams                   mo    07h56     75   535       005
+
+                   02 6 12534 4   trohel          d       cr    12h01     75   535       007
+
+                     - avant mise a jour                                                                              
+                                                                                                 
+                                                                                                                      
+                                                                                                 
+
+                     - apres mise a jour                           domiciliation  : 40618  80324  00040641093  66     
+                                               boursorama                mme trohel anais        
+
+                                                                                                                      
+                                                                                                 
+
+                                           - nbr mvt du jour :    7
+
+                                           - nbr mvt section :   12  
+
+
+
+
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     1
    lps10e    cin tours
    centre   dest : 003                           liste des propositions de  creation    etablissement
@@ -3456,162 +3456,6 @@
    t o t a l  s e c t i o n  :         3  
 
 
-
-
-   le 03/06/19 a 15h18                                                                                               page :     1
-   lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
-   centre   dest : 004                                  d u   06 - 02 - 19                                           folio :    1
-   page impr. :      6
-
-                      numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
-
-                   04 1 80129 1   abboud          d       cr    13h56     76   347       003
-
-                     - avant mise a jour                                                                              
-                                                                                                 
-                                                                                                                      
-                                                                                                 
-
-                     - apres mise a jour                           domiciliation  : 30004  00706  00010140424  02     
-                                               bnp                       imagerie medicale de hau
-
-                                                                                                                      
-                                                                                                 
-
-                   04 1 80130 9   abboud          d       cr    14h00     76   347       004
-
-                     - avant mise a jour                                                                              
-                                                                                                 
-                                                                                                                      
-                                                                                                 
-
-                     - apres mise a jour                           domiciliation  : 30004  00706  00010140424  02     
-                                               bnp                       imagerie medicale de hau
-
-                                                                                                                      
-                                                                                                 
-
-                   04 1 80131 7   abboud          d       cr    14h02     76   347       005
-
-                     - avant mise a jour                                                                              
-                                                                                                 
-                                                                                                                      
-                                                                                                 
-
-                     - apres mise a jour                           domiciliation  : 30004  00706  00010140424  02     
-                                               bnp                       imagerie medicale de hau
-
-                                                                                                                      
-                                                                                                 
-
-                   04 1 80132 5   abboud          d       cr    14h04     76   347       006  
-
-
-
-
-   le 03/06/19 a 15h18                                                                                               page :     2
-   lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
-   centre   dest : 004                                  d u   06 - 02 - 19                                           folio :    2
-   page impr. :      7
-
-                      numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
-
-                     - avant mise a jour                                                                              
-                                                                                                 
-                                                                                                                      
-                                                                                                 
-
-                     - apres mise a jour                           domiciliation  : 30004  00706  00010140424  02     
-                                               bnp                       imagerie medicale de hau
-
-                                                                                                                      
-                                                                                                 
-
-                   04 1 80133 3   abboud          d       cr    14h19     76   347       007
-
-                     - avant mise a jour                                                                              
-                                                                                                 
-                                                                                                                      
-                                                                                                 
-
-                     - apres mise a jour                           domiciliation  : 30004  00706  00010140424  02     
-                                               bnp                       imagerie medicale de hau
-
-                                                                                                                      
-                                                                                                 
-
-                   04 1 80134 1   abboud          d       cr    14h21     76   347       008
-
-                     - avant mise a jour                                                                              
-                                                                                                 
-                                                                                                                      
-                                                                                                 
-
-                     - apres mise a jour                           domiciliation  : 30004  00706  00010140424  02     
-                                               bnp                       imagerie medicale de hau
-
-                                                                                                                      
-                                                                                                 
-
-                   04 1 80135 8   abboud          d       cr    14h23     76   347       009
-
-                     - avant mise a jour                                                                              
-                                                                                                 
-                                                                                                                      
-                                                                                                 
-
-                     - apres mise a jour                           domiciliation  : 30004  00706  00010140424  02     
-                                               bnp                       imagerie medicale de hau
-
-                                                                                                                      
-                                                                                                   
-
-
-
-
-   le 03/06/19 a 15h18                                                                                               page :     3
-   lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
-   centre   dest : 004                                  d u   06 - 02 - 19                                           folio :    3
-   page impr. :      8
-
-                      numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
-
-                   04 2 55135 8   adamek                  mo    13h47     76   347       001
-
-                   04 2 55135 8   adamek                  mo    13h50     76   347       002
-
-                                           - nbr mvt du jour :    9
-
-                                           - nbr mvt section :    9  
-/*b1nr16  nombre de page ecrite    =     0 ende
-/*b1nr18  nombre de documents      =   364 ende
-/*b1nr19   +lmj03e  364+ende
-
-
-
-
-
-                                    page fin d'edition  (         *** mouvements de prades  ***    )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    nombre de documents edites  = 000364
-
-                                    titre de l'etat               *** mouvements de prades  *** 
-
-                                    fichier cree le             = 03/06/19  
 
 
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     1
@@ -5526,3 +5370,159 @@
                                     titre de l'etat               p.s.h. : propositions modif.  
 
                                     fichier cree le             = 27/05/19  
+
+
+   le 03/06/19 a 15h18                                                                                               page :     1
+   lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
+   centre   dest : 004                                  d u   06 - 02 - 19                                           folio :    1
+   page impr. :      6
+
+                      numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
+
+                   04 1 80129 1   abboud          d       cr    13h56     76   347       003
+
+                     - avant mise a jour                                                                              
+                                                                                                 
+                                                                                                                      
+                                                                                                 
+
+                     - apres mise a jour                           domiciliation  : 30004  00706  00010140424  02     
+                                               bnp                       imagerie medicale de hau
+
+                                                                                                                      
+                                                                                                 
+
+                   04 1 80130 9   abboud          d       cr    14h00     76   347       004
+
+                     - avant mise a jour                                                                              
+                                                                                                 
+                                                                                                                      
+                                                                                                 
+
+                     - apres mise a jour                           domiciliation  : 30004  00706  00010140424  02     
+                                               bnp                       imagerie medicale de hau
+
+                                                                                                                      
+                                                                                                 
+
+                   04 1 80131 7   abboud          d       cr    14h02     76   347       005
+
+                     - avant mise a jour                                                                              
+                                                                                                 
+                                                                                                                      
+                                                                                                 
+
+                     - apres mise a jour                           domiciliation  : 30004  00706  00010140424  02     
+                                               bnp                       imagerie medicale de hau
+
+                                                                                                                      
+                                                                                                 
+
+                   04 1 80132 5   abboud          d       cr    14h04     76   347       006  
+
+
+
+
+   le 03/06/19 a 15h18                                                                                               page :     2
+   lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
+   centre   dest : 004                                  d u   06 - 02 - 19                                           folio :    2
+   page impr. :      7
+
+                      numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
+
+                     - avant mise a jour                                                                              
+                                                                                                 
+                                                                                                                      
+                                                                                                 
+
+                     - apres mise a jour                           domiciliation  : 30004  00706  00010140424  02     
+                                               bnp                       imagerie medicale de hau
+
+                                                                                                                      
+                                                                                                 
+
+                   04 1 80133 3   abboud          d       cr    14h19     76   347       007
+
+                     - avant mise a jour                                                                              
+                                                                                                 
+                                                                                                                      
+                                                                                                 
+
+                     - apres mise a jour                           domiciliation  : 30004  00706  00010140424  02     
+                                               bnp                       imagerie medicale de hau
+
+                                                                                                                      
+                                                                                                 
+
+                   04 1 80134 1   abboud          d       cr    14h21     76   347       008
+
+                     - avant mise a jour                                                                              
+                                                                                                 
+                                                                                                                      
+                                                                                                 
+
+                     - apres mise a jour                           domiciliation  : 30004  00706  00010140424  02     
+                                               bnp                       imagerie medicale de hau
+
+                                                                                                                      
+                                                                                                 
+
+                   04 1 80135 8   abboud          d       cr    14h23     76   347       009
+
+                     - avant mise a jour                                                                              
+                                                                                                 
+                                                                                                                      
+                                                                                                 
+
+                     - apres mise a jour                           domiciliation  : 30004  00706  00010140424  02     
+                                               bnp                       imagerie medicale de hau
+
+                                                                                                                      
+                                                                                                   
+
+
+
+
+   le 03/06/19 a 15h18                                                                                               page :     3
+   lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
+   centre   dest : 004                                  d u   06 - 02 - 19                                           folio :    3
+   page impr. :      8
+
+                      numero      nom abrege     dom     mvt    heure    grpe  liq   no. ordre 
+
+                   04 2 55135 8   adamek                  mo    13h47     76   347       001
+
+                   04 2 55135 8   adamek                  mo    13h50     76   347       002
+
+                                           - nbr mvt du jour :    9
+
+                                           - nbr mvt section :    9  
+/*b1nr16  nombre de page ecrite    =     0 ende
+/*b1nr18  nombre de documents      =   364 ende
+/*b1nr19   +lmj03e  364+ende
+
+
+
+
+
+                                    page fin d'edition  (         *** mouvements de prades  ***    )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    nombre de documents edites  = 000364
+
+                                    titre de l'etat               *** mouvements de prades  *** 
+
+                                    fichier cree le             = 03/06/19  
