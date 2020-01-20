@@ -31,8 +31,10 @@ public class RegroupeEditions {
 				log.debug(String.format("%d editions trouvees", editionParts.size()));
 				EditionFactory.buildFromEditionParts(editionParts);
 			}
+			log.info("Regroupement ...");
 			String edition = EditionFactory.getEditionsRegroupee();
 			SystemUtil.writeFileWithContent(params.getResultFileName(), edition);
+			log.info("Fin.");
 		}
 	}
 

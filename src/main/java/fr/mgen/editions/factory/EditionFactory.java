@@ -18,7 +18,11 @@ public final class EditionFactory {
 	public static final Pattern DEFAUT_SAUT_DE_PAGE = Pattern.compile("@      @@      @@  @@ *\\r?\\n");
 	public static final Pattern NOM_CENTRE = Pattern.compile(" *centre +dest +: +([0-9]+)");
 
+	/** Map nom du centre / Centre */
 	private static Map<String, Centre> mCentre = new HashMap<>();
+
+	/** Map Nom du centre / nombre d'éditions pour debug uniquement */
+	private static Map<String, Integer> mCentreNbEditions = null;
 
 	private EditionFactory() {
 		// empty
@@ -27,6 +31,7 @@ public final class EditionFactory {
 	public static void buildFromEditionParts(List<String> editionParts) {
 
 		MetaInfo metaInfo = null;
+		mCentreNbEditions = new HashMap<>();
 
 		if (!editionParts.isEmpty()) {
 			metaInfo = createMetaInfo(editionParts.remove(0));
@@ -37,6 +42,8 @@ public final class EditionFactory {
 		for (String editionPart : editionParts) {
 			buildFromEditionPart(metaInfo, editionPart);
 		}
+
+		log.debug("-> Nombre d'editions par centre trouvees: " + mCentreNbEditions);
 	}
 
 	private static MetaInfo createMetaInfo(String str) {
@@ -53,6 +60,12 @@ public final class EditionFactory {
 		Centre centre = getOrCreateCentre(nomCentre);
 		EditionPart editionPart = createEditionPart(part);
 		centre.getEditionParts().add(editionPart);
+
+		// Pour debug uniquement
+		Integer nbEditions = mCentreNbEditions.computeIfAbsent(nomCentre, nC -> 0);
+		nbEditions++;
+		mCentreNbEditions.put(nomCentre, nbEditions);
+
 		return editionPart;
 	}
 
