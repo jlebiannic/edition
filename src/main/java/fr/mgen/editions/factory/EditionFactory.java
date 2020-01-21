@@ -34,12 +34,15 @@ public final class EditionFactory {
 	private static String pageHeaderTemplate;
 	private static String pageBottom;
 	private static String pageLastBottom;
+	private static String pageLastEndBottom;
 	private static String pageEndRegroupementTemplate;
 	static {
 		headerTemplate = SystemUtil.toString(EditionFactory.class.getResourceAsStream("/templates/fileHeaderTpl.txt"));
 		pageHeaderTemplate = SystemUtil.toString(EditionFactory.class.getResourceAsStream("/templates/pageHeaderTpl.txt"));
 		pageBottom = SystemUtil.toString(EditionFactory.class.getResourceAsStream("/templates/pageBottom.txt"));
 		pageLastBottom = SystemUtil.toString(EditionFactory.class.getResourceAsStream("/templates/pageLastBottom.txt"));
+		pageLastEndBottom = SystemUtil
+				.toString(EditionFactory.class.getResourceAsStream("/templates/pageLastEndBottom.txt"));
 		pageEndRegroupementTemplate = SystemUtil
 				.toString(EditionFactory.class.getResourceAsStream("/templates/pageEndRegroupementTpl.txt"));
 	}
@@ -159,28 +162,36 @@ public final class EditionFactory {
 				.collect(Collectors.toList());
 
 		int nbPageGarde = 0;
-		for (Centre centre : orderedCentres) {
+		for (int cptCentre = 0; cptCentre < orderedCentres.size(); cptCentre++) {
+			Centre centre = orderedCentres.get(cptCentre);
 			log.debug(String.format("Regroupement centre %s (%d editions)", centre.getNom(),
 					centre.getEditionPartsSize()));
 
-			int cptEdition = 0;
+			
 			// Parcours des éditions d'un centre
-			for (Edition edition : centre.getEditions()) {
+			int cptEdition = 0;
+			for (; cptEdition < centre.getEditions().size(); cptEdition++) {
+				Edition edition = centre.getEditions().get(cptEdition);
 				MetaInfo metaInfo = edition.getMetaInfo();
 				// Page de garde de début d'édition
 				editionsGroupees.append(
 						buildPageHeader(numPage, centre.getNom(), metaInfo.getTitreEtat(), metaInfo.getFileName(), date,
 								metaInfo.getNumEdiaDemande()));
 				editionsGroupees.append(edition.buildContent(numPage + 1));
-				if (cptEdition == centre.getEditions().size() - 1) {
-					// Page de fin de toutes les éditions du centre
-					editionsGroupees.append(pageLastBottom);
-				} else {
+				if (cptEdition != centre.getEditions().size() - 1) {
 					// Page de fin d'une édition d'un centre
 					editionsGroupees.append(pageBottom);
+				} else {
+					if (cptCentre != orderedCentres.size() - 1) {
+						// Page de fin de toutes les éditions du centre
+						editionsGroupees.append(pageLastBottom);
+					} else {
+						// Page de fin de toutes les éditions du centre et dernière édition du
+						// regroupement
+						editionsGroupees.append(pageLastEndBottom);
+					}
 				}
 				numPage += edition.getEditionParts().size() + 1;
-				cptEdition++;
 			}
 			nbPageGarde += cptEdition;
 		}
