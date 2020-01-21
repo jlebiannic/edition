@@ -56,17 +56,12 @@ public class SystemUtilTest {
 		List<String> parts = SystemUtil.splitContent(dataset.getContent(), EditionFactory.DEFAUT_SAUT_DE_PAGE);
 		String expectedResult = "jqshfjqfsh\r\n" + 
 				"\r\n" + 
-				",\r\n" +
-				"lkfqsfdlfdskmk\r\n" + 
+				",lkfqsfdlfdskmk\r\n" +
 				"qkflmqsdfkqsflùk\r\n" + 
 				"gklvkckcvjqgkljeilejz\r\n" + 
 				"ksjfajkqslkfj\r\n" + 
 				"qsdjofjk\r\n" + 
-				",\r\n" +
-				"kljdfklfj\r\n" + 
-				"jkljfklsjqs@      @@      @@  @@klqjsfklsdfj\r\n" + 
-				",\r\n" +
-				"mlkdfjklfdsj\r\n" + 
+				",kljdfklfj\r\n" + "jkljfklsjqs,,mlkdfjklfdsj\r\n" + 
 				"kqsdlfjmkfdsklj\r\n" + 
 				"klqsjdf\r\n" + 
 				",aazxcwww";
