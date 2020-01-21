@@ -1,0 +1,32 @@
+
+    
+
+
+
+
+
+
+
+                                                      page    %s    
+
+
+
+
+
+
+
+            nombre.de.fichiers.regroupes       %s    
+            nombre.de.documents.edites      %s    
+            dont.pages.de.garde.et.fin       %s    
+            date.de.regroupement          %s  
+            heure.de.regroupement         %s    
+            format.du.papier              =   03    
+            nombre.d'exemplaires          =   01    
+            no.programme.de.faconnage     =   32    
+            edition.laser                 =    o    
+            numero.'dia'.demande          =   00    
+            nombre.de.bandes.ecrites           0    
+    /*b1re16  nombre de pages          =  %sende
+/*b1re17  nombre de pages de garde =   %sende
+/*b1re18  nombre de documents      =  %sende
+/*b1re19   %s            ende

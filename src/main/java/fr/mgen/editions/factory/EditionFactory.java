@@ -1,8 +1,6 @@
 package fr.mgen.editions.factory;
 
 import java.nio.file.Path;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -18,6 +16,7 @@ import fr.mgen.editions.model.Centre;
 import fr.mgen.editions.model.Edition;
 import fr.mgen.editions.model.EditionPart;
 import fr.mgen.editions.model.MetaInfo;
+import fr.mgen.editions.util.DateUtil;
 import fr.mgen.editions.util.StringBuilderPlus;
 import fr.mgen.editions.util.SystemUtil;
 import lombok.Data;
@@ -35,11 +34,14 @@ public final class EditionFactory {
 	private static String pageHeaderTemplate;
 	private static String pageBottom;
 	private static String pageLastBottom;
+	private static String pageEndRegroupementTemplate;
 	static {
 		headerTemplate = SystemUtil.toString(EditionFactory.class.getResourceAsStream("/templates/fileHeaderTpl.txt"));
 		pageHeaderTemplate = SystemUtil.toString(EditionFactory.class.getResourceAsStream("/templates/pageHeaderTpl.txt"));
 		pageBottom = SystemUtil.toString(EditionFactory.class.getResourceAsStream("/templates/pageBottom.txt"));
 		pageLastBottom = SystemUtil.toString(EditionFactory.class.getResourceAsStream("/templates/pageLastBottom.txt"));
+		pageEndRegroupementTemplate = SystemUtil
+				.toString(EditionFactory.class.getResourceAsStream("/templates/pageEndRegroupementTpl.txt"));
 	}
 
 	/** Map nom du centre / Centre */
@@ -56,6 +58,7 @@ public final class EditionFactory {
 	public static class FileInfo {
 		String fileName;
 		String numEdiaDemande;
+		int nbParts;
 
 		public FileInfo(String fileName) {
 			super();
@@ -92,7 +95,9 @@ public final class EditionFactory {
 			buildFromEditionPart(metaInfo, editionPart);
 		}
 
-		log.debug("-> Nombre d'editions par centre trouvees: " + mCentreNbEditions);
+		fileInfo.setNbParts(mCentreNbEditions.values().stream().reduce(0, (a, b) -> a + b));
+		
+		log.debug("Nombre de parties d'editions par centre: " + mCentreNbEditions);
 	}
 
 	private static MetaInfo createMetaInfo(String str, String fileName, int order) {
@@ -143,9 +148,9 @@ public final class EditionFactory {
 	public static String buildEditionsRegroupee() {
 		StringBuilderPlus editionsGroupees = new StringBuilderPlus();
 		int numPage = 1;
-		LocalDateTime now = LocalDateTime.now();
-		String date = now.format(DateTimeFormatter.ofPattern("dd/MM/yy"));
-		String heure = now.format(DateTimeFormatter.ofPattern("HH:mm")).replace(":", "h");
+
+		String date = DateUtil.getDate();
+		String heure = DateUtil.getHeure();
 
 		editionsGroupees.append(buildHeader(date, heure));
 
@@ -153,28 +158,49 @@ public final class EditionFactory {
 		List<Centre> orderedCentres = mCentre.values().stream().sorted(Comparator.comparing(Centre::getNom))
 				.collect(Collectors.toList());
 
+		int nbPageGarde = 0;
 		for (Centre centre : orderedCentres) {
 			log.debug(String.format("Regroupement centre %s (%d editions)", centre.getNom(),
 					centre.getEditionPartsSize()));
 
-			int cpt = 0;
+			int cptEdition = 0;
+			// Parcours des éditions d'un centre
 			for (Edition edition : centre.getEditions()) {
 				MetaInfo metaInfo = edition.getMetaInfo();
+				// Page de garde de début d'édition
 				editionsGroupees.append(
 						buildPageHeader(numPage, centre.getNom(), metaInfo.getTitreEtat(), metaInfo.getFileName(), date,
 								metaInfo.getNumEdiaDemande()));
 				editionsGroupees.append(edition.buildContent(numPage + 1));
-				if (cpt == centre.getEditions().size() - 1) {
+				if (cptEdition == centre.getEditions().size() - 1) {
+					// Page de fin de toutes les éditions du centre
 					editionsGroupees.append(pageLastBottom);
 				} else {
+					// Page de fin d'une édition d'un centre
 					editionsGroupees.append(pageBottom);
 				}
 				numPage += edition.getEditionParts().size() + 1;
-				cpt++;
+				cptEdition++;
 			}
+			nbPageGarde += cptEdition;
 		}
 
+		editionsGroupees.append(buildEndPageRegroupement(numPage, nbPageGarde));
+
 		return editionsGroupees.toString();
+	}
+
+	private static String buildEndPageRegroupement(int nbPagesTotal, int nbPageGarde) {
+		return String.format(pageEndRegroupementTemplate, nbPagesTotal, fileInfos.size(), nbPagesTotal, nbPageGarde,
+				DateUtil.getDate(), DateUtil.getHeure(), nbPagesTotal, nbPageGarde, nbPagesTotal,
+				buildResumeFichiers());
+	}
+
+	private static String buildResumeFichiers() {
+		StringBuilder sb = new StringBuilder();
+		fileInfos.forEach(
+				fileInfo -> sb.append("+").append(fileInfo.getFileName()).append(" ").append(fileInfo.getNbParts()));
+		return sb.toString();
 	}
 
 	private static String buildPageHeader(int numPage, String nom, String titreEtat, String fileName, String date,

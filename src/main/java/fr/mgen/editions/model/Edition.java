@@ -52,6 +52,7 @@ public class Edition {
 				contentWithNumPage = PatternUtil.replaceFirstMatchingElem(contentWithNumPage, FIN_PAGE_IMPR, "",
 						"Fin de page non trouvée dans: " + contentWithNumPage);
 			} else if (cpt != editionParts.size() - 1 && contentWithNumPage.indexOf('\f') == -1) {
+				// Insertion des sauts de page après chaque partie de l'édition
 				contentWithNumPage += sautDePage;
 			}
 
