@@ -6,8 +6,10 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -27,6 +29,7 @@ public final class EditionFactory {
 	public static final Pattern NOM_CENTRE = Pattern.compile(" *centre +dest +: +([0-9]+)");
 
 	public static final String ENTETE_FICHIER_FORMAT = "/*b1re05    %s %s 000 001 0000 ende";
+	public static final String ENTETE_FICHIER_END_FORMAT = "/*a2$dia%s$ende";
 
 	private static String headerTemplate;
 	private static String pageHeaderTemplate;
@@ -143,9 +146,8 @@ public final class EditionFactory {
 		LocalDateTime now = LocalDateTime.now();
 		String date = now.format(DateTimeFormatter.ofPattern("dd/MM/yy"));
 		String heure = now.format(DateTimeFormatter.ofPattern("HH:mm")).replace(":", "h");
-		String type = fileInfos.isEmpty() ? "x35" : fileInfos.get(0).getNumEdiaDemande();
 
-		editionsGroupees.append(buildHeader(date, heure, type));
+		editionsGroupees.append(buildHeader(date, heure));
 
 		// Parcours des centres
 		List<Centre> orderedCentres = mCentre.values().stream().sorted(Comparator.comparing(Centre::getNom))
@@ -160,7 +162,7 @@ public final class EditionFactory {
 				MetaInfo metaInfo = edition.getMetaInfo();
 				editionsGroupees.append(
 						buildPageHeader(numPage, centre.getNom(), metaInfo.getTitreEtat(), metaInfo.getFileName(), date,
-								type));
+								metaInfo.getNumEdiaDemande()));
 				editionsGroupees.append(edition.buildContent(numPage + 1));
 				if (cpt == centre.getEditions().size() - 1) {
 					editionsGroupees.append(pageLastBottom);
@@ -180,12 +182,24 @@ public final class EditionFactory {
 		return String.format(pageHeaderTemplate, numPage, nom, numPage, titreEtat, fileName, date, type);
 	}
 
-	private static String buildHeader(String date, String heure, String type) {
+	private static String buildHeader(String date, String heure) {
 		StringBuilderPlus sbFilesInfos = new StringBuilderPlus();
-		fileInfos.forEach(fileInfo -> sbFilesInfos.appendLine(
-				String.format(ENTETE_FICHIER_FORMAT, fileInfo.getFileName(), fileInfo.getNumEdiaDemande())));
+		StringBuilderPlus sbEndInfos = new StringBuilderPlus();
+		Set<String> numEdiaDemandes = new HashSet<>();
+		fileInfos.forEach(fileInfo -> {
+			String numEdiaDemande = fileInfo.getNumEdiaDemande();
+			sbFilesInfos.appendLine(
+					String.format(ENTETE_FICHIER_FORMAT, fileInfo.getFileName(), numEdiaDemande));
 
-		return String.format(headerTemplate, sbFilesInfos.toString(), date, heure, type);
+			if (!numEdiaDemandes.contains(numEdiaDemande)) {
+				sbEndInfos.appendLine(String.format(ENTETE_FICHIER_END_FORMAT, numEdiaDemande));
+				numEdiaDemandes.add(numEdiaDemande);
+			}
+
+			});
+
+
+		return String.format(headerTemplate, sbFilesInfos.toString(), date, heure, sbEndInfos.toString());
 	}
 
 }

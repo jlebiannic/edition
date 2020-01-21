@@ -4,10 +4,11 @@
 /*b1re10  edition format no 03 ..........ende
 /*b1re11  monter le papier correspondantende
 /*b1re12  programme de faconnage 32ende
-/*b1re13  date  de regroupement 20/01/20ende
-/*b1re14  heure de regroupement 17h59ende
+/*b1re13  date  de regroupement 21/01/20ende
+/*b1re14  heure de regroupement 11h14ende
 /*b1re15  premiere bande regroupee = 00000ende
 /*a2$diax35$ende
+/*a2$diax37$ende
 /*a2$diaa30$ende
 /*a6##3005001ende
                                           @@@                                                                            
@@ -64,7 +65,7 @@
 
          reference du traitement          0000
 
-         date d'edition                   20/01/20        
+         date d'edition                   21/01/20        
 
     /*a2$diax35$ende
                                           @@@                                                                            
@@ -304,7 +305,7 @@
 
          reference du traitement          0000
 
-         date d'edition                   20/01/20        
+         date d'edition                   21/01/20        
 
     /*a2$diax35$ende
                                           @@@                                                                            
@@ -424,7 +425,7 @@
 
          reference du traitement          0000
 
-         date d'edition                   20/01/20        
+         date d'edition                   21/01/20        
 
     /*a2$diax35$ende
                                           @@@                                                                            
@@ -3341,7 +3342,7 @@
 
          reference du traitement          0000
 
-         date d'edition                   20/01/20        
+         date d'edition                   21/01/20        
 
     /*a2$diax35$ende
                                           @@@                                                                            
@@ -3520,7 +3521,7 @@
 
          reference du traitement          0000
 
-         date d'edition                   20/01/20        
+         date d'edition                   21/01/20        
 
     /*a2$diax35$ende
                                           @@@                                                                            
@@ -3733,9 +3734,9 @@
 
          reference du traitement          0000
 
-         date d'edition                   20/01/20        
+         date d'edition                   21/01/20        
 
-    /*a2$diax35$ende
+    /*a2$diax37$ende
                                           @@@                                                                            
 
 @      @@      @@  @@            
@@ -3906,7 +3907,7 @@
 
          reference du traitement          0000
 
-         date d'edition                   20/01/20        
+         date d'edition                   21/01/20        
 
     /*a2$diax35$ende
                                           @@@                                                                            
@@ -5067,35 +5068,7 @@
 
 
      total section (suppression + creation) :       93  
-/*b1nr16  nombre de page ecrite    =     0 ende
-/*b1nr18  nombre de documents      =  3147 ende
-/*b1nr19   +lps10e 3147+ende
 
-
-
-
-
-                                    page fin d'edition  (         p.s.h. : prop. creat.et suppr.   )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    nombre de documents edites  = 003147
-
-                                    titre de l'etat               p.s.h. : prop. creat.et suppr.
-
-                                    fichier cree le             = 27/05/19  
 /*a2$diaa30$ende
 /*a6##3005001ende
                                                @@@                                                                       
@@ -5153,9 +5126,9 @@
 
          reference du traitement          0000
 
-         date d'edition                   20/01/20        
+         date d'edition                   21/01/20        
 
-    /*a2$diax35$ende
+    /*a2$diax37$ende
                                           @@@                                                                            
 
 @      @@      @@  @@            
@@ -5862,35 +5835,7 @@
 
 
    t o t a l  s e c t i o n  :        20  
-/*b1nr16  nombre de page ecrite    =     0 ende
-/*b1nr18  nombre de documents      =  2673 ende
-/*b1nr19   +lps11e 2673+ende
 
-
-
-
-
-                                    page fin d'edition  (         p.s.h. : propositions modif.     )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    nombre de documents edites  = 002673
-
-                                    titre de l'etat               p.s.h. : propositions modif.  
-
-                                    fichier cree le             = 27/05/19  
 /*a2$diaa30$ende
 /*a6##3005001ende
                                                @@@                                                                       
@@ -5948,7 +5893,7 @@
 
          reference du traitement          0000
 
-         date d'edition                   20/01/20        
+         date d'edition                   21/01/20        
 
     /*a2$diax35$ende
                                           @@@                                                                            
@@ -6082,35 +6027,7 @@
                                            - nbr mvt du jour :    9
 
                                            - nbr mvt section :    9  
-/*b1nr16  nombre de page ecrite    =     0 ende
-/*b1nr18  nombre de documents      =   364 ende
-/*b1nr19   +lmj03e  364+ende
-
-
-
-
-
-                                    page fin d'edition  (         *** mouvements de prades  ***    )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    nombre de documents edites  = 000364
-
-                                    titre de l'etat               *** mouvements de prades  *** 
-
-                                    fichier cree le             = 03/06/19  
+
 /*a2$dias21$ende
 /*a6##3005001ende
     

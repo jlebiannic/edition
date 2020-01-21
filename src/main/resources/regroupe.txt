@@ -1,13 +1,14 @@
 /*b1re05    lps10e x35 000 001 0000 ende
-/*b1re05    lps11e x35 000 001 0000 ende
+/*b1re05    lps11e x37 000 001 0000 ende
 /*b1re05    lmj03e x35 000 001 0000 ende
 /*b1re10  edition format no 03 ..........ende
 /*b1re11  monter le papier correspondantende
 /*b1re12  programme de faconnage 32ende
 /*b1re13  date  de regroupement 21/01/20ende
-/*b1re14  heure de regroupement 10h29ende
+/*b1re14  heure de regroupement 11h14ende
 /*b1re15  premiere bande regroupee = 00000ende
 /*a2$diax35$ende
+/*a2$diax37$ende
 /*a2$diaa30$ende
 /*a6##3005001ende
                                           @@@                                                                            
@@ -3735,7 +3736,7 @@
 
          date d'edition                   21/01/20        
 
-    /*a2$diax35$ende
+    /*a2$diax37$ende
                                           @@@                                                                            
 
 @      @@      @@  @@            
@@ -5127,7 +5128,7 @@
 
          date d'edition                   21/01/20        
 
-    /*a2$diax35$ende
+    /*a2$diax37$ende
                                           @@@                                                                            
 
 @      @@      @@  @@            
