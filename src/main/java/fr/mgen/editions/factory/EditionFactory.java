@@ -182,10 +182,8 @@ public final class EditionFactory {
 
 	private static String buildHeader(String date, String heure, String type) {
 		StringBuilderPlus sbFilesInfos = new StringBuilderPlus();
-		fileInfos.forEach(fileInfo -> {
-			sbFilesInfos.appendLine(
-					String.format(ENTETE_FICHIER_FORMAT, fileInfo.getFileName(), fileInfo.getNumEdiaDemande()));
-		});
+		fileInfos.forEach(fileInfo -> sbFilesInfos.appendLine(
+				String.format(ENTETE_FICHIER_FORMAT, fileInfo.getFileName(), fileInfo.getNumEdiaDemande())));
 
 		return String.format(headerTemplate, sbFilesInfos.toString(), date, heure, type);
 	}
