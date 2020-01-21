@@ -8,8 +8,9 @@ import lombok.EqualsAndHashCode;
 
 @Data
 public class MetaInfo {
-	public static final Pattern TITRE = Pattern.compile(" *titre de l'etat *= *([^\\r\\n]+)");
-	public static final Pattern NUM_EDIA_DEMANDES = Pattern.compile(" *numero 'edia' demandes *= *(\\w+)");
+	public static final Pattern TITRE = Pattern.compile(" *titre de l'etat *= *([^\\r\\n]+)", Pattern.CASE_INSENSITIVE);
+	public static final Pattern NUM_EDIA_DEMANDES = Pattern.compile(" *numero 'edia' demandes *= *(\\w+)",
+			Pattern.CASE_INSENSITIVE);
 
 	@EqualsAndHashCode.Exclude
 	private String info;
