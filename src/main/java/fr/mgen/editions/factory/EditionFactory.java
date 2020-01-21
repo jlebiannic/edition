@@ -24,8 +24,8 @@ import lombok.extern.log4j.Log4j2;
 
 @Log4j2
 public final class EditionFactory {
-	public static final Pattern DEFAUT_SAUT_DE_PAGE = Pattern.compile("@      @@      @@  @@.*(\\n|\\r)");
-	public static final Pattern NOM_CENTRE = Pattern.compile(" *centre +dest +: +([0-9]+)", Pattern.CASE_INSENSITIVE);
+	public static final Pattern DEFAUT_SAUT_DE_PAGE = Pattern.compile("@      @@      @@  @@.*(\\n|\\r)+");
+	public static final Pattern NOM_CENTRE = Pattern.compile(" *centre +dest +: +(\\w+)", Pattern.CASE_INSENSITIVE);
 
 	public static final String ENTETE_FICHIER_FORMAT = "/*b1re05    %s %s 000 001 0000 ende";
 	public static final String ENTETE_FICHIER_END_FORMAT = "/*a2$dia%s$ende";
@@ -185,7 +185,7 @@ public final class EditionFactory {
 			nbPageGarde += cptEdition;
 		}
 
-		editionsGroupees.append(buildEndPageRegroupement(numPage, nbPageGarde));
+		editionsGroupees.append(buildEndPageRegroupement(numPage, nbPageGarde + 1));
 
 		return editionsGroupees.toString();
 	}
