@@ -3,7 +3,10 @@ package fr.mgen.editions.dataset;
 import java.io.InputStream;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
+import fr.mgen.editions.RegroupeEditions.Params;
 import fr.mgen.editions.util.SystemUtil;
 
 public class DataSet {
@@ -37,19 +40,22 @@ public class DataSet {
 		return SystemUtil.toString(stream);
 	}
 
-	public String getIntegrationContentResult() {
-		InputStream stream = DataSet.class.getResourceAsStream("/integration/gcos/regroupementEditions.txt");
+	public String getIntegrationContentExpected2() {
+		InputStream stream = DataSet.class.getResourceAsStream("/integration/linux/regroupe.txt");
 		return SystemUtil.toString(stream);
 	}
 
-	public String[] getArgs() {
-		String[] args = {
-						"-reps"
-							, resourcesAbsolutePath+"/integration/gcos/lps"
-							, resourcesAbsolutePath+"/integration/gcos/lmj"
-						, "-res"
-							, resourcesAbsolutePath+"/integration/gcos/regroupementEditions.txt"
-						};
-		 return args;
+	public Params getParams() {
+		List<String> dirsNames = new ArrayList<>();
+		dirsNames.add(resourcesAbsolutePath+"/integration/gcos/lps");
+		dirsNames.add(resourcesAbsolutePath+"/integration/gcos/lmj");
+		return new Params(dirsNames, null);
+	}
+
+	public Params getParams2() {
+		List<String> dirsNames = new ArrayList<>();
+		dirsNames.add(resourcesAbsolutePath + "/integration/linux/lps");
+		dirsNames.add(resourcesAbsolutePath + "/integration/linux/lmj");
+		return new Params(dirsNames, null);
 	}
 }

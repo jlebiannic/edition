@@ -75,6 +75,12 @@ public final class EditionFactory {
 		// empty
 	}
 
+	public static void init() {
+		fileInfos = new ArrayList<>();
+		mCentre = new HashMap<>();
+		order = 0;
+	}
+
 	/**
 	 * Traite un ensemble de parties d'édition (correspond à un fichier)
 	 */

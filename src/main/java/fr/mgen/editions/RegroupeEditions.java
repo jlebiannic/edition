@@ -23,19 +23,23 @@ public class RegroupeEditions {
 		Params params = getParams(args);
 
 		if (params != null) {
-			List<Path> paths = SystemUtil.getPathsFromDirs(params.getDirsNames());
-			for (Path path : paths) {
-				log.info("Traitement: " + path);
-				String fileContent = SystemUtil.getFileContent(path);
-				List<String> editionParts = SystemUtil.splitContent(fileContent, EditionFactory.DEFAUT_SAUT_DE_PAGE);
-				log.debug(String.format("%d parties trouvees (avec entête)", editionParts.size()));
-				EditionFactory.buildFromEditionParts(editionParts, path);
-			}
-			log.info("Regroupement ...");
-			String edition = EditionFactory.buildEditionsRegroupee();
+			String edition = regroupeEditions(params);
 			SystemUtil.writeFileWithContent(params.getResultFileName(), edition);
 			log.info("Fin.");
 		}
+	}
+
+	public static String regroupeEditions(Params params) throws IOException {
+		List<Path> paths = SystemUtil.getPathsFromDirs(params.getDirsNames());
+		for (Path path : paths) {
+			log.info("Traitement: " + path);
+			String fileContent = SystemUtil.getFileContent(path);
+			List<String> editionParts = SystemUtil.splitContent(fileContent, EditionFactory.DEFAUT_SAUT_DE_PAGE);
+			log.debug(String.format("%d parties trouvees (avec entête)", editionParts.size()));
+			EditionFactory.buildFromEditionParts(editionParts, path);
+		}
+		log.info("Regroupement ...");
+		return EditionFactory.buildEditionsRegroupee();
 	}
 
 	private static Params getParams(String[] args) {
