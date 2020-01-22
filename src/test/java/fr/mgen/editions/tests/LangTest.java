@@ -32,7 +32,7 @@ public class LangTest {
 	}
 
 	@Test
-	public void split() {
+	public void cutAndBoundTest() {
 		String str = "+lmj03e  364+lps10e  3147+lps11e  2673+lfi511l 1159+lfi531l 95+lfi611l   4";
 		String expected = "+lmj03e  364+lps10e  3147+lps11e  2673+\r\n" + "lfi511l 1159+lfi531l 95+lfi611l   4";
 		assertEquals(expected, StringUtil.cut(str, "+", 50));

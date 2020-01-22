@@ -8,9 +8,11 @@ import fr.mgen.editions.util.SystemUtil;
 
 public class DataSet {
 	private String aboslutPath;
+	private String resourcesAbsolutePath;
 	public DataSet() {
 		Path currentRelativePath = Paths.get("");
 		aboslutPath = currentRelativePath.toAbsolutePath().toString();
+		resourcesAbsolutePath = aboslutPath + "/src/test/resources";
 	}
 
 	public String getDir1PathName() {
@@ -28,5 +30,26 @@ public class DataSet {
 	public String getContent() {
 		InputStream stream = DataSet.class.getResourceAsStream("/content.txt");
 		return SystemUtil.toString(stream);
+	}
+
+	public String getIntegrationContentExpected() {
+		InputStream stream = DataSet.class.getResourceAsStream("/integration/gcos/regroupe.txt");
+		return SystemUtil.toString(stream);
+	}
+
+	public String getIntegrationContentResult() {
+		InputStream stream = DataSet.class.getResourceAsStream("/integration/gcos/regroupementEditions.txt");
+		return SystemUtil.toString(stream);
+	}
+
+	public String[] getArgs() {
+		String[] args = {
+						"-reps"
+							, resourcesAbsolutePath+"/integration/gcos/lps"
+							, resourcesAbsolutePath+"/integration/gcos/lmj"
+						, "-res"
+							, resourcesAbsolutePath+"/integration/gcos/regroupementEditions.txt"
+						};
+		 return args;
 	}
 }
