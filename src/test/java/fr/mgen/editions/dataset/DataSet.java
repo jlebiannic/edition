@@ -1,9 +1,10 @@
 package fr.mgen.editions.dataset;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+
+import fr.mgen.editions.util.SystemUtil;
 
 public class DataSet {
 	private String aboslutPath;
@@ -26,10 +27,6 @@ public class DataSet {
 
 	public String getContent() {
 		InputStream stream = DataSet.class.getResourceAsStream("/content.txt");
-		try {
-			return new String(stream.readAllBytes());
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
+		return SystemUtil.toString(stream);
 	}
 }

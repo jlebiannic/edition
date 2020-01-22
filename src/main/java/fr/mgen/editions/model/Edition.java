@@ -7,6 +7,7 @@ import java.util.regex.Pattern;
 import fr.mgen.editions.factory.EditionFactory;
 import fr.mgen.editions.util.PatternUtil;
 import fr.mgen.editions.util.StringBuilderPlus;
+import fr.mgen.editions.util.StringUtil;
 import fr.mgen.editions.util.SystemUtil;
 import lombok.Data;
 
@@ -44,7 +45,7 @@ public class Edition {
 					"Page non trouvée dans: " + content);
 
 			// suppression des retours à la ligne multiples en fin de texte
-			contentWithNumPage = contentWithNumPage.stripTrailing();
+			contentWithNumPage = StringUtil.stripTrailing(contentWithNumPage);
 
 			// Pour la dernière page il peut y avoir un résumé à supprimer si c'est la
 			// dernière page du fichier
