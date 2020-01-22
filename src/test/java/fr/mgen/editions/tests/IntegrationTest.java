@@ -5,12 +5,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.io.IOException;
 
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import fr.mgen.editions.RegroupeEditions;
 import fr.mgen.editions.dataset.DataSet;
-import fr.mgen.editions.factory.EditionFactory;
 
 public class IntegrationTest {
 
@@ -19,11 +17,6 @@ public class IntegrationTest {
 	@BeforeAll
 	public static void init() {
 		dataset = new DataSet();
-	}
-
-	@BeforeEach
-	public void initEach() {
-		EditionFactory.init();
 	}
 
 	@Test

@@ -30,16 +30,17 @@ public class RegroupeEditions {
 	}
 
 	public static String regroupeEditions(Params params) throws IOException {
+		EditionFactory editionFactory = new EditionFactory();
 		List<Path> paths = SystemUtil.getPathsFromDirs(params.getDirsNames());
 		for (Path path : paths) {
 			log.info("Traitement: " + path);
 			String fileContent = SystemUtil.getFileContent(path);
 			List<String> editionParts = SystemUtil.splitContent(fileContent, EditionFactory.DEFAUT_SAUT_DE_PAGE);
 			log.debug(String.format("%d parties trouvees (avec entête)", editionParts.size()));
-			EditionFactory.buildFromEditionParts(editionParts, path);
+			editionFactory.buildFromEditionParts(editionParts, path);
 		}
 		log.info("Regroupement ...");
-		return EditionFactory.buildEditionsRegroupee();
+		return editionFactory.buildEditionsRegroupee();
 	}
 
 	private static Params getParams(String[] args) {

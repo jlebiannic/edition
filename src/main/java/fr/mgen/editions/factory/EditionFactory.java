@@ -49,14 +49,14 @@ public final class EditionFactory {
 	}
 
 	/** Map nom du centre / Centre */
-	private static Map<String, Centre> mCentre = new HashMap<>();
+	private Map<String, Centre> mCentre;
 
 	/** Map Nom du centre / nombre d'éditions pour debug uniquement */
-	private static Map<String, Integer> mCentreNbEditions = null;
+	private Map<String, Integer> mCentreNbEditions;
 
-	private static List<FileInfo> fileInfos = new ArrayList<>();
+	private List<FileInfo> fileInfos;
 
-	private static int order = 0;
+	private int order;
 
 	@Data
 	public static class FileInfo {
@@ -71,20 +71,17 @@ public final class EditionFactory {
 
 	}
 
-	private EditionFactory() {
-		// empty
-	}
-
-	public static void init() {
+	public EditionFactory() {
 		fileInfos = new ArrayList<>();
 		mCentre = new HashMap<>();
 		order = 0;
 	}
 
+
 	/**
 	 * Traite un ensemble de parties d'édition (correspond à un fichier)
 	 */
-	public static void buildFromEditionParts(List<String> editionParts, Path path) {
+	public void buildFromEditionParts(List<String> editionParts, Path path) {
 
 		MetaInfo metaInfo = null;
 		mCentreNbEditions = new HashMap<>();
@@ -110,16 +107,16 @@ public final class EditionFactory {
 		log.debug("Nombre de parties d'editions par centre: " + mCentreNbEditions);
 	}
 
-	private static MetaInfo createMetaInfo(String str, String fileName, int order) {
+	private MetaInfo createMetaInfo(String str, String fileName, int order) {
 		return new MetaInfo(str, fileName, order);
 	}
 
-	private static void buildFromEditionPart(MetaInfo metaInfo, String part) {
+	private void buildFromEditionPart(MetaInfo metaInfo, String part) {
 		String nomCentre = getNomCentreFromEditionPart(part);
 		createEditionPartForCentre(nomCentre, metaInfo, part);
 	}
 
-	private static EditionPart createEditionPartForCentre(String nomCentre, MetaInfo metaInfo, String part) {
+	private EditionPart createEditionPartForCentre(String nomCentre, MetaInfo metaInfo, String part) {
 		Centre centre = getOrCreateCentre(nomCentre);
 		EditionPart editionPart = createEditionPart(metaInfo, part);
 		centre.addEditionPart(editionPart);
@@ -132,19 +129,19 @@ public final class EditionFactory {
 		return editionPart;
 	}
 
-	private static Centre getOrCreateCentre(String nomCentre) {
-		return mCentre.computeIfAbsent(nomCentre, EditionFactory::createCentre);
+	private Centre getOrCreateCentre(String nomCentre) {
+		return mCentre.computeIfAbsent(nomCentre, this::createCentre);
 	}
 
-	private static Centre createCentre(String nomCentre) {
+	private Centre createCentre(String nomCentre) {
 		return new Centre(nomCentre);
 	}
 
-	private static EditionPart createEditionPart(MetaInfo metaInfo, String part) {
+	private EditionPart createEditionPart(MetaInfo metaInfo, String part) {
 		return new EditionPart(metaInfo, part);
 	}
 
-	private static String getNomCentreFromEditionPart(String part) {
+	private String getNomCentreFromEditionPart(String part) {
 		String nomCentre = null;
 		Matcher matcher = NOM_CENTRE.matcher(part);
 		if (matcher.find()) {
@@ -155,7 +152,7 @@ public final class EditionFactory {
 		return nomCentre;
 	}
 
-	public static String buildEditionsRegroupee() {
+	public String buildEditionsRegroupee() {
 		StringBuilderPlus editionsGroupees = new StringBuilderPlus();
 		int numPage = 1;
 
@@ -208,7 +205,7 @@ public final class EditionFactory {
 		return editionsGroupees.toString();
 	}
 
-	private static String buildEndPageRegroupement(int nbPagesTotal, int nbPageGarde) {
+	private String buildEndPageRegroupement(int nbPagesTotal, int nbPageGarde) {
 		return String.format(pageEndRegroupementTemplate, nbPagesTotal, fileInfos.size(), nbPagesTotal, nbPageGarde,
 				DateUtil.getDate(), DateUtil.getHeure(), nbPagesTotal, nbPageGarde, nbPagesTotal,
 				buildResumeFichiers());
@@ -221,7 +218,7 @@ public final class EditionFactory {
 		/*b1re19   +fic5   95+fic6    4+                    ende
 	 * 
 	 * */
-	private static String buildResumeFichiers() {
+	private String buildResumeFichiers() {
 		StringBuilder sb = new StringBuilder();
 		String sep = "+";
 		fileInfos.forEach(
@@ -230,12 +227,12 @@ public final class EditionFactory {
 		return StringUtil.bound(StringUtil.cut(sb.toString(), sep, 50), "/*b1re19  ", "end");
 	}
 
-	private static String buildPageHeader(int numPage, String nom, String titreEtat, String fileName, String date,
+	private String buildPageHeader(int numPage, String nom, String titreEtat, String fileName, String date,
 			String type) {
 		return String.format(pageHeaderTemplate, numPage, nom, numPage, titreEtat, fileName, date, type);
 	}
 
-	private static String buildHeader(String date, String heure) {
+	private String buildHeader(String date, String heure) {
 		StringBuilderPlus sbFilesInfos = new StringBuilderPlus();
 		StringBuilderPlus sbEndInfos = new StringBuilderPlus();
 		Set<String> numEdiaDemandes = new HashSet<>();
