@@ -18,6 +18,7 @@ import fr.mgen.editions.model.EditionPart;
 import fr.mgen.editions.model.MetaInfo;
 import fr.mgen.editions.util.DateUtil;
 import fr.mgen.editions.util.StringBuilderPlus;
+import fr.mgen.editions.util.StringUtil;
 import fr.mgen.editions.util.SystemUtil;
 import lombok.Data;
 import lombok.extern.log4j.Log4j2;
@@ -207,11 +208,20 @@ public final class EditionFactory {
 				buildResumeFichiers());
 	}
 
+	/** 
+	 * Construction d'un résumé nom de fichier/nombre de parties d'édition
+	 * Exemple:
+	 * 	/*b1re19   +fic1  364+fic2 3147+fic3 2673+fic4 1159+ende
+		/*b1re19   +fic5   95+fic6    4+                    ende
+	 * 
+	 * */
 	private static String buildResumeFichiers() {
 		StringBuilder sb = new StringBuilder();
+		String sep = "+";
 		fileInfos.forEach(
-				fileInfo -> sb.append("+").append(fileInfo.getFileName()).append(" ").append(fileInfo.getNbParts()));
-		return sb.toString();
+				fileInfo -> sb.append(sep).append(fileInfo.getFileName()).append(" ").append(fileInfo.getNbParts()));
+		// Découpage sur plusieurs lignes pour ne pas dépasser 50 caractères
+		return StringUtil.bound(StringUtil.cut(sb.toString(), sep, 50), "/*b1re19  ", "end");
 	}
 
 	private static String buildPageHeader(int numPage, String nom, String titreEtat, String fileName, String date,

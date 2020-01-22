@@ -4,8 +4,8 @@
 /*b1re10  edition format no 03 ..........ende
 /*b1re11  monter le papier correspondantende
 /*b1re12  programme de faconnage 32ende
-/*b1re13  date  de regroupement 21/01/20ende
-/*b1re14  heure de regroupement 16h24ende
+/*b1re13  date  de regroupement 22/01/20ende
+/*b1re14  heure de regroupement 17h22ende
 /*b1re15  premiere bande regroupee = 00000ende
 /*a2$diax35$ende
 /*a2$diax37$ende
@@ -14,6 +14,8 @@
                                           @@@                                                                            
 
 @      @@      @@  @@          @@
+
+
 
 
  page      1                                                                                              
@@ -65,12 +67,13 @@
 
          reference du traitement          0000
 
-         date d'edition                   21/01/20        
+         date d'edition                   22/01/20        
 
     /*a2$diax35$ende
                                           @@@                                                                            
 
 @      @@      @@  @@            
+
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     1
    lps10e    cin tours
    centre   dest : 001                           liste des propositions de  creation    etablissement
@@ -248,7 +251,11 @@
                                                @@@                                                                       
 
 @      @@      @@                
-     page      6                                                                                              
+    
+
+
+
+ page      6                                                                                              
 
 
 
@@ -297,12 +304,13 @@
 
          reference du traitement          0000
 
-         date d'edition                   21/01/20        
+         date d'edition                   22/01/20        
 
     /*a2$diax35$ende
                                           @@@                                                                            
 
 @      @@      @@  @@            
+
    le 03/06/19 a 15h18                                                                                               page :     1
    lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
    centre   dest : 001                                  d u   06 - 02 - 19                                           folio :    1
@@ -355,15 +363,16 @@
                                            - nbr mvt du jour :    2
 
                                            - nbr mvt section :    4
-  /*a2$dias21$ende
+  /*a2$diaa30$ende
 /*a6##3005001ende
-    
+                                          @@@                                                                            
 
 @      @@      @@  @@          @@
+   
 
 
 
- page      9                                                                                              
+  page      9                                                                                              
 
 
 
@@ -412,12 +421,13 @@
 
          reference du traitement          0000
 
-         date d'edition                   21/01/20        
+         date d'edition                   22/01/20        
 
     /*a2$diax35$ende
                                           @@@                                                                            
 
 @      @@      @@  @@            
+
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     1
    lps10e    cin tours
    centre   dest : 002                           liste des propositions de  creation    etablissement
@@ -3272,7 +3282,11 @@
                                                @@@                                                                       
 
 @      @@      @@                
-     page      69                                                                                              
+    
+
+
+
+ page      69                                                                                              
 
 
 
@@ -3321,12 +3335,13 @@
 
          reference du traitement          0000
 
-         date d'edition                   21/01/20        
+         date d'edition                   22/01/20        
 
     /*a2$diax35$ende
                                           @@@                                                                            
 
 @      @@      @@  @@            
+
    le 03/06/19 a 15h18                                                                                               page :     1
    lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
    centre   dest : 002                                  d u   06 - 02 - 19                                           folio :    1
@@ -3438,15 +3453,16 @@
                                            - nbr mvt du jour :    7
 
                                            - nbr mvt section :   12
-  /*a2$dias21$ende
+  /*a2$diaa30$ende
 /*a6##3005001ende
-    
+                                          @@@                                                                            
 
 @      @@      @@  @@          @@
+   
 
 
 
- page      73                                                                                              
+  page      73                                                                                              
 
 
 
@@ -3495,12 +3511,13 @@
 
          reference du traitement          0000
 
-         date d'edition                   21/01/20        
+         date d'edition                   22/01/20        
 
     /*a2$diax35$ende
                                           @@@                                                                            
 
 @      @@      @@  @@            
+
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     1
    lps10e    cin tours
    centre   dest : 003                           liste des propositions de  creation    etablissement
@@ -3651,7 +3668,11 @@
                                                @@@                                                                       
 
 @      @@      @@                
-     page      78                                                                                              
+    
+
+
+
+ page      78                                                                                              
 
 
 
@@ -3700,12 +3721,13 @@
 
          reference du traitement          0000
 
-         date d'edition                   21/01/20        
+         date d'edition                   22/01/20        
 
     /*a2$diax37$ende
                                           @@@                                                                            
 
 @      @@      @@  @@            
+
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :     1
    lps11e    cin tours
    centre   dest : 003                           propositions  de  mise a jour                                        centre : 003
@@ -3811,15 +3833,16 @@
 
 
    t o t a l  s e c t i o n  :         3
-  /*a2$dias21$ende
+  /*a2$diaa30$ende
 /*a6##3005001ende
-    
+                                          @@@                                                                            
 
 @      @@      @@  @@          @@
+   
 
 
 
- page      82                                                                                              
+  page      82                                                                                              
 
 
 
@@ -3868,12 +3891,13 @@
 
          reference du traitement          0000
 
-         date d'edition                   21/01/20        
+         date d'edition                   22/01/20        
 
     /*a2$diax35$ende
                                           @@@                                                                            
 
 @      @@      @@  @@            
+
    le 27/05/19 a 12h20                           prades - rapprochement avec fichier cnam                             page :     1
    lps10e    cin tours
    centre   dest : 004                           liste des propositions de  creation    etablissement
@@ -5032,7 +5056,11 @@
                                                @@@                                                                       
 
 @      @@      @@                
-     page      107                                                                                              
+    
+
+
+
+ page      107                                                                                              
 
 
 
@@ -5081,12 +5109,13 @@
 
          reference du traitement          0000
 
-         date d'edition                   21/01/20        
+         date d'edition                   22/01/20        
 
     /*a2$diax37$ende
                                           @@@                                                                            
 
 @      @@      @@  @@            
+
    le 27/05/19 a 12h20                           plan  statistique  hospitalier                                       page :     1
    lps11e    cin tours
    centre   dest : 004                           propositions  de  mise a jour                                        centre : 004
@@ -5793,7 +5822,11 @@
                                                @@@                                                                       
 
 @      @@      @@                
-     page      128                                                                                              
+    
+
+
+
+ page      128                                                                                              
 
 
 
@@ -5842,12 +5875,13 @@
 
          reference du traitement          0000
 
-         date d'edition                   21/01/20        
+         date d'edition                   22/01/20        
 
     /*a2$diax35$ende
                                           @@@                                                                            
 
 @      @@      @@  @@            
+
    le 03/06/19 a 15h18                                                                                               page :     1
    lmj03e    cin tours                      o p e r a t i o n s   j o u r n a l i e r e s
    centre   dest : 004                                  d u   06 - 02 - 19                                           folio :    1
@@ -5977,9 +6011,6 @@
 
 @      @@      @@  @@          @@
 
-
-
-
     
 
 
@@ -5998,9 +6029,9 @@
 
             nombre.de.fichiers.regroupes       3    
             nombre.de.documents.edites      132    
-            dont.pages.de.garde.et.fin       9    
-            date.de.regroupement          21/01/20  
-            heure.de.regroupement         16h24    
+            dont.pages.de.garde.et.fin       10    
+            date.de.regroupement          22/01/20  
+            heure.de.regroupement         17h22    
             format.du.papier              =   03    
             nombre.d'exemplaires          =   01    
             no.programme.de.faconnage     =   32    
@@ -6008,6 +6039,6 @@
             numero.'dia'.demande          =   00    
             nombre.de.bandes.ecrites           0    
     /*b1re16  nombre de pages          =  132ende
-/*b1re17  nombre de pages de garde =   9ende
+/*b1re17  nombre de pages de garde =   10ende
 /*b1re18  nombre de documents      =  132ende
-/*b1re19   +lps10e 91+lps11e 23+lmj03e 8            ende
+/*b1re19  +lps10e 91+lps11e 23+lmj03e 8end
