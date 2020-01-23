@@ -1,9 +1,6 @@
 package fr.mgen.editions.util;
 
-import lombok.Getter;
-
 public class StringBuilderPlus {
-	@Getter
 	private java.lang.StringBuilder sb;
 
 	public StringBuilderPlus() {
@@ -36,7 +33,4 @@ public class StringBuilderPlus {
 		return sb.toString();
 	}
 
-	public int length() {
-		return sb.length();
-	}
 }
