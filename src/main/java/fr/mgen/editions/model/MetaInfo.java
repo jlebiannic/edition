@@ -6,6 +6,10 @@ import fr.mgen.editions.util.PatternUtil;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+/**
+ * Informations déduitent d'un entête de fichier d'entrée (contenant une édition
+ * pour plusieurs centres)
+ */
 @Data
 public class MetaInfo {
 	public static final Pattern TITRE = Pattern.compile(" *titre de l'etat *= *([^\\r\\n]+)", Pattern.CASE_INSENSITIVE);

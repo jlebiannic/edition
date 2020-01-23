@@ -40,9 +40,12 @@ public class RegroupeEditions {
 			editionFactory.buildFromEditionParts(editionParts, path);
 		}
 		log.info("Regroupement ...");
-		return editionFactory.buildEditionsRegroupee();
+		return editionFactory.buildAndGetEditionsRegroupee();
 	}
 
+	/**
+	 * Analyse des arguments passés au programme
+	 */
 	private static Params getParams(String[] args) {
 		Params params = null;
 		ArgumentParser parser = ArgumentParsers.newFor("RegroupeEditions").build()

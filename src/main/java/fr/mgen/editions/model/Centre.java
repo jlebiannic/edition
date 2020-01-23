@@ -12,6 +12,10 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * Centre Mgen
+ * 
+ */
 @Data
 public class Centre {
 	private String nom;
@@ -25,6 +29,9 @@ public class Centre {
 		this.nom = nom;
 	}
 
+	/**
+	 * Construction de la liste des @Edition contenant les @EditionPart
+	 */
 	public List<Edition> getEditions() {
 		// Tri sur le titre des méta infos
 		return mMetaInfoEditionParts.entrySet().stream()
@@ -33,6 +40,10 @@ public class Centre {
 				.collect(Collectors.toList());
 	}
 
+	/**
+	 * Ajoute une @EditionPart à une @Edition. Les @MetaInfo constituent la clé pour
+	 * savoir à quelle @Edition appartient une @EditionPart
+	 */
 	public void addEditionPart(EditionPart editionPart) {
 		MetaInfo metaInfo = editionPart.getMetaInfo();
 		Edition editionForMetaInfo = mMetaInfoEditionParts.computeIfAbsent(metaInfo, Edition::new);
@@ -40,6 +51,9 @@ public class Centre {
 		mMetaInfoEditionParts.put(metaInfo, editionForMetaInfo);
 	}
 
+	/**
+	 * Retourn le nombre d' @Edition du centre
+	 */
 	public int getEditionPartsSize() {
 		return this.mMetaInfoEditionParts.size();
 	}

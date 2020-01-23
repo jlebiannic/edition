@@ -23,6 +23,13 @@ import fr.mgen.editions.util.SystemUtil;
 import lombok.Data;
 import lombok.extern.log4j.Log4j2;
 
+/**
+ * Gestion des parties d'un fichier d'édition: cf. @buildFromEditionParts
+ * - construction du modèle Centre->Edition->EditionPart
+ * Constructon de l'édition finale: cf. @buildEditionsRegroupee
+ * - regroupement des différentes éditions par centre
+ * 
+ * */
 @Log4j2
 public final class EditionFactory {
 	public static final Pattern DEFAUT_SAUT_DE_PAGE = Pattern.compile("@      @@      @@  @@.*(\\n|\\r)+");
@@ -51,7 +58,7 @@ public final class EditionFactory {
 	/** Map nom du centre / Centre */
 	private Map<String, Centre> mCentre;
 
-	/** Map Nom du centre / nombre d'éditions pour debug uniquement */
+	/** Map Nom du centre / nombre d'éditions */
 	private Map<String, Integer> mCentreNbEditions;
 
 	private List<FileInfo> fileInfos;
@@ -107,21 +114,33 @@ public final class EditionFactory {
 		log.debug("Nombre de parties d'editions par centre: " + mCentreNbEditions);
 	}
 
+	/**
+	 * Création d'une instance de @MetaInfo à partir des informations d'entête d'un
+	 * fichier d'entrée
+	 */
 	private MetaInfo createMetaInfo(String str, String fileName, int order) {
 		return new MetaInfo(str, fileName, order);
 	}
 
+	/**
+	 * Traitement d'une partie d'édition pour rattachement à un centre
+	 */
 	private void buildFromEditionPart(MetaInfo metaInfo, String part) {
 		String nomCentre = getNomCentreFromEditionPart(part);
 		createEditionPartForCentre(nomCentre, metaInfo, part);
 	}
 
+	/**
+	 * Création d'une instance d'EditionPart et ajout à un centre L'instance
+	 * d'un @Centre est capable de reconstruire ces @Edition à partir
+	 * des @EditionPart
+	 * 
+	 */
 	private EditionPart createEditionPartForCentre(String nomCentre, MetaInfo metaInfo, String part) {
 		Centre centre = getOrCreateCentre(nomCentre);
 		EditionPart editionPart = createEditionPart(metaInfo, part);
 		centre.addEditionPart(editionPart);
 
-		// Pour debug uniquement
 		Integer nbEditions = mCentreNbEditions.computeIfAbsent(nomCentre, nC -> 0);
 		nbEditions++;
 		mCentreNbEditions.put(nomCentre, nbEditions);
@@ -129,18 +148,31 @@ public final class EditionFactory {
 		return editionPart;
 	}
 
+	/**
+	 * Récupération d'un @Centre déjà créé ou création s'il n'existe pas
+	 */
 	private Centre getOrCreateCentre(String nomCentre) {
 		return mCentre.computeIfAbsent(nomCentre, this::createCentre);
 	}
 
+	/**
+	 * Création d'une instance d'un @Centre
+	 */
 	private Centre createCentre(String nomCentre) {
 		return new Centre(nomCentre);
 	}
 
+	/**
+	 * Création d'une instance @EditionPart: contient les @MetaInfo présentent dans
+	 * l'entête d'un fichier d'entrée (impression concernant plusieurs centres)
+	 */
 	private EditionPart createEditionPart(MetaInfo metaInfo, String part) {
 		return new EditionPart(metaInfo, part);
 	}
 
+	/**
+	 * Récupération du nom du centre dans une partie d'édition
+	 */
 	private String getNomCentreFromEditionPart(String part) {
 		String nomCentre = null;
 		Matcher matcher = NOM_CENTRE.matcher(part);
@@ -152,7 +184,10 @@ public final class EditionFactory {
 		return nomCentre;
 	}
 
-	public String buildEditionsRegroupee() {
+	/**
+	 * Construction du fichier final regroupant les éditions par centre
+	 */
+	public String buildAndGetEditionsRegroupee() {
 		StringBuilderPlus editionsGroupees = new StringBuilderPlus();
 		int numPage = 1;
 
@@ -205,6 +240,9 @@ public final class EditionFactory {
 		return editionsGroupees.toString();
 	}
 
+	/**
+	 * Construction du résumé tout à la fin du fichier final
+	 */
 	private String buildEndPageRegroupement(int nbPagesTotal, int nbPageGarde) {
 		return String.format(pageEndRegroupementTemplate, nbPagesTotal, fileInfos.size(), nbPagesTotal, nbPageGarde,
 				DateUtil.getDate(), DateUtil.getHeure(), nbPagesTotal, nbPageGarde, nbPagesTotal,
@@ -227,11 +265,18 @@ public final class EditionFactory {
 		return StringUtil.bound(StringUtil.cut(sb.toString(), sep, 50), "/*b1re19  ", "end");
 	}
 
+	/**
+	 * Construction d'un entête de page positionnée avant toutes les éditions d'un
+	 * centre
+	 */
 	private String buildPageHeader(int numPage, String nom, String titreEtat, String fileName, String date,
 			String type) {
 		return String.format(pageHeaderTemplate, numPage, nom, numPage, titreEtat, fileName, date, type);
 	}
 
+	/**
+	 * Construction de l'entête global du fichier final
+	 */
 	private String buildHeader(String date, String heure) {
 		StringBuilderPlus sbFilesInfos = new StringBuilderPlus();
 		StringBuilderPlus sbEndInfos = new StringBuilderPlus();
@@ -247,8 +292,6 @@ public final class EditionFactory {
 			}
 
 			});
-
-
 		return String.format(headerTemplate, sbFilesInfos.toString(), date, heure, sbEndInfos.toString());
 	}
 

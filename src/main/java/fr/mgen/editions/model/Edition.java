@@ -31,6 +31,10 @@ public class Edition {
 		this.metaInfo = metaInfo;
 	}
 
+	/**
+	 * Construction du contenu de l' @Edition en concaténant ses @EditionPart
+	 * 
+	 */
 	public String buildContent(int numPage) {
 		int numCurrentPage = numPage;
 		StringBuilderPlus editionContent = new StringBuilderPlus();
@@ -53,7 +57,7 @@ public class Edition {
 				contentWithNumPage = PatternUtil.replaceFirstMatchingElem(contentWithNumPage, FIN_PAGE_IMPR, "",
 						"Fin de page non trouvée dans: " + contentWithNumPage);
 			} else if (cpt != editionParts.size() - 1 && contentWithNumPage.indexOf('\f') == -1) {
-				// Insertion des sauts de page après chaque partie de l'édition
+				// Insertion des sauts de page après chaque partie de l'édition (si pas déjà présent)
 				contentWithNumPage += sautDePage;
 			}
 
