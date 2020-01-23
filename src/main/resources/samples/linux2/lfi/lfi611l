@@ -1,0 +1,154 @@
+/*B1NR13  DATE  DE CREATION     16/09/19ENDE
+/*B1NR14  HEURE DE CREATION     15H53ENDE
+
+
+
+
+
+
+
+
+
+
+           PARAMETRES  DE  REGROUPEMENT  DES  EDITIONS  PAR  DESTINATAIRES
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    FORMAT PAPIER               = 03
+
+                                    NOMBRE D'EXEMPLAIRE         = 01
+
+                                    NO PROGRAMME DE FACONNAGE   = 32
+
+                                    EDITION LASER               = O
+
+                                    NUMERO 'EDIA' DEMANDES      = X37.
+
+                                    NUMERO 'DIA' DEMANDE        = 00
+
+                                    PARAMETRE                   = 0000
+
+                                    FICHIER CREE LE             = 16/09/19
+
+                                    TITRE DE L'ETAT             = * LISTE - MVT - V.3  FINPS *
+
+                                    TITRE ABREGE DE L'ETAT      = LFI61L
+
+                                    REFERENCE DE TRAITEMENT     = 0000
+
+                                    TEXTE LIBRE                 =
+
+                                    LIGNE DU NUMERO DE CENTRE   = 07
+
+                                    POSITION DANS LA LIGNE      = 019
+
+                                    LIGNE DU NUMERO DE PAGE     = 08
+
+                                    POSITION PAGE GAUCHE        = 016
+
+                                    POSITION PAGE DROITE SI Y   = 000
+
+                                    NUMERO 'FOB' DEMANDES       = 000.
+
+                                    OPTION 1                    =
+
+                                    OPTION 2                    =
+
+
+
+
+
+@      @@      @@  @@          @@
+  LE 16/09/19 A 15H53                                                                                                            1
+  LFI61L    CIN TOURS                  LISTE DES PROPOSITIONS DE SUPPRESSIONS DANS PRADES
+  CENTRE  DEST  : 045                                   EN DATE DU 18 02 2019
+
+
+  PAGE IMPR. :      1
+    CPAM  NO  IDENT
+
+     451  451704068
+
+
+
+@      @@      @@  @@          @@
+  LE 16/09/19 A 15H53                                                                                                            1
+  LFI61L    CIN TOURS                  LISTE DES PROPOSITIONS DE SUPPRESSIONS DANS PRADES
+  CENTRE  DEST  : 059                                   EN DATE DU 18 02 2019
+
+
+  PAGE IMPR. :      2
+    CPAM  NO  IDENT
+
+     599  598000321
+
+
+
+@      @@      @@  @@          @@
+  LE 16/09/19 A 15H53                                                                                                            1
+  LFI61L    CIN TOURS                  LISTE DES PROPOSITIONS DE SUPPRESSIONS DANS PRADES
+  CENTRE  DEST  : 069                                   EN DATE DU 18 02 2019
+
+
+  PAGE IMPR. :      3
+    CPAM  NO  IDENT
+
+     691  697005254
+
+     691  697009660
+
+
+
+@      @@      @@  @@          @@
+  LE 16/09/19 A 15H53                                                                                                            1
+  LFI61L    CIN TOURS                  LISTE DES PROPOSITIONS DE SUPPRESSIONS DANS PRADES
+  CENTRE  DEST  : 076                                   EN DATE DU 18 02 2019
+
+
+  PAGE IMPR. :      4
+    CPAM  NO  IDENT
+
+     763  761830850/*B1NR16  NOMBRE DE PAGE ECRITE    =     0ENDE
+/*B1NR18  NOMBRE DE DOCUMENTS      =     4ENDE
+/*B1NR19   +LFI61L    4ENDE
+
+
+
+
+
+
+
+
+
+                                    PAGE FIN D'EDITION  ( * LISTE - MVT - V.3  FINPS *   )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    NOMBRE DE DOCUMENTS EDITES  = 000004
+
+                                    TITRE DE L'ETAT             = * LISTE - MVT - V.3  FINPS *
+
+                                    FICHIER CREE LE             = 16/09/19
+
