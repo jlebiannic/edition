@@ -61,7 +61,7 @@ public class RegroupeEditions {
 				.dest("res").metavar("nom fichier")
 				.type(String.class)
 				.required(true)
-				.help("fichier résultat contenant les editions regroupees par centre");
+				.help("fichier resultat contenant les editions regroupees par centre");
 		
 		try {
 			Namespace res = parser.parseArgs(args);
