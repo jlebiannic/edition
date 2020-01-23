@@ -21,6 +21,7 @@ import fr.mgen.editions.util.StringBuilderPlus;
 import fr.mgen.editions.util.StringUtil;
 import fr.mgen.editions.util.SystemUtil;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 
 /**
@@ -66,6 +67,7 @@ public final class EditionFactory {
 	private int order;
 
 	@Data
+	@NoArgsConstructor
 	public static class FileInfo {
 		String fileName;
 		String numEdiaDemande;

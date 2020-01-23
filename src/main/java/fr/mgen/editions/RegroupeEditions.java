@@ -8,6 +8,7 @@ import fr.mgen.editions.factory.EditionFactory;
 import fr.mgen.editions.util.SystemUtil;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import net.sourceforge.argparse4j.ArgumentParsers;
 import net.sourceforge.argparse4j.inf.ArgumentParser;
@@ -46,7 +47,7 @@ public class RegroupeEditions {
 	/**
 	 * Analyse des arguments passés au programme
 	 */
-	private static Params getParams(String[] args) {
+	public static Params getParams(String[] args) {
 		Params params = null;
 		ArgumentParser parser = ArgumentParsers.newFor("RegroupeEditions").build()
 				.description("Regroupe les editions par centre dans un fichier unique.");
@@ -74,6 +75,7 @@ public class RegroupeEditions {
 
 	@Data
 	@AllArgsConstructor
+	@NoArgsConstructor
 	public static class Params {
 		List<String> dirsNames;
 		String resultFileName;

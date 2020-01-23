@@ -2,6 +2,7 @@ package fr.mgen.editions.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * Partie d'une @Edition Contient la @MetaInfo créée partir des informations
@@ -9,6 +10,7 @@ import lombok.Data;
  */
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class EditionPart {
 
 	private MetaInfo metaInfo;

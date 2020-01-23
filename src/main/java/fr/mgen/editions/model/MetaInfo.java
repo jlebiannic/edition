@@ -5,12 +5,14 @@ import java.util.regex.Pattern;
 import fr.mgen.editions.util.PatternUtil;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 /**
  * Informations déduitent d'un entête de fichier d'entrée (contenant une édition
  * pour plusieurs centres)
  */
 @Data
+@NoArgsConstructor
 public class MetaInfo {
 	public static final Pattern TITRE = Pattern.compile(" *titre de l'etat *= *([^\\r\\n]+)", Pattern.CASE_INSENSITIVE);
 	public static final Pattern NUM_EDIA_DEMANDES = Pattern.compile(" *numero 'edia' demandes *= *(\\w+)",

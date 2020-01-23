@@ -10,8 +10,10 @@ import fr.mgen.editions.util.StringBuilderPlus;
 import fr.mgen.editions.util.StringUtil;
 import fr.mgen.editions.util.SystemUtil;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 public class Edition {
 
 	private static final Pattern PAGE_IMPR = Pattern.compile("page impr\\. *: *([0-9]+)", Pattern.CASE_INSENSITIVE);

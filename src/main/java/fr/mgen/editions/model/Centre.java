@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
@@ -17,6 +18,7 @@ import lombok.Setter;
  * 
  */
 @Data
+@NoArgsConstructor
 public class Centre {
 	private String nom;
 

@@ -6,6 +6,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+import fr.mgen.editions.RegroupeEditions;
 import fr.mgen.editions.RegroupeEditions.Params;
 import fr.mgen.editions.util.SystemUtil;
 
@@ -57,5 +58,10 @@ public class DataSet {
 		dirsNames.add(resourcesAbsolutePath + "/integration/linux/lps");
 		dirsNames.add(resourcesAbsolutePath + "/integration/linux/lmj");
 		return new Params(dirsNames, null);
+	}
+
+	public Params getArgs() {
+		String[] args = { "-reps", "rep1", "rep2", "-res", "res" };
+		return RegroupeEditions.getParams(args);
 	}
 }
