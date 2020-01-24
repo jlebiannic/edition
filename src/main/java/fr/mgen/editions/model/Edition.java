@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 public class Edition {
 
 	private static final Pattern PAGE_IMPR = Pattern.compile("page impr\\. *: *([0-9]+)", Pattern.CASE_INSENSITIVE);
-	private static final Pattern FIN_PAGE_IMPR = Pattern.compile("(/\\*b1nr16 *nombre de page ecrite.+)",
+	private static final Pattern FIN_PAGE_IMPR = Pattern.compile("(\\s+/\\*b1nr16 *nombre de page ecrite.+)",
 			Pattern.DOTALL | Pattern.CASE_INSENSITIVE);
 	private static final Pattern POUR_FORMATAGE_PAGE_IMPR = Pattern.compile("([\\n\\r]+) *page impr\\. *: *[0-9]+",
 			Pattern.CASE_INSENSITIVE);
