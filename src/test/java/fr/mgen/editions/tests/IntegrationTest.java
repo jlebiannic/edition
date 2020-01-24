@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
 
 import fr.mgen.editions.RegroupeEditions;
 import fr.mgen.editions.dataset.DataSet;
-import fr.mgen.editions.util.SystemUtil;
 
 public class IntegrationTest {
 
@@ -24,8 +23,8 @@ public class IntegrationTest {
 	public void integrationTest() throws IOException, InterruptedException {
 		String integrationContentResult = clean(RegroupeEditions.regroupeEditions(dataset.getParams()));
 		String integrationContentExpected = clean(dataset.getIntegrationContentExpected());
-		SystemUtil.writeFileWithContent("d:\\tmpRes.txt", integrationContentResult);
-		SystemUtil.writeFileWithContent("d:\\tmpExpected.txt", integrationContentExpected);
+//		SystemUtil.writeFileWithContent("d:\\tmpRes.txt", integrationContentResult);
+//		SystemUtil.writeFileWithContent("d:\\tmpExpected.txt", integrationContentExpected);
 		assertEquals(integrationContentExpected, integrationContentResult);
 	}
 	
