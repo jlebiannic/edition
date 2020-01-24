@@ -1,6 +1,7 @@
 package fr.mgen.editions.util;
 
 public class StringBuilderPlus {
+	public static final String LINE_SEP = System.getProperty("line.separator");
 	private java.lang.StringBuilder sb;
 
 	public StringBuilderPlus() {
@@ -8,12 +9,12 @@ public class StringBuilderPlus {
     }
 
 	public StringBuilderPlus appendLine(String str) {
-		sb.append(str).append(System.getProperty("line.separator"));
+		sb.append(str).append(LINE_SEP);
 		return this;
 	}
 
 	public StringBuilderPlus appendLine() {
-		sb.append(System.getProperty("line.separator"));
+		sb.append(LINE_SEP);
 		return this;
 	}
 
