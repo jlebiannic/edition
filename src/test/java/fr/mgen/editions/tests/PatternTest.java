@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 
 import org.junit.jupiter.api.Test;
 
-import fr.mgen.editions.util.StringBuilderPlus;
+import fr.mgen.editions.util.SystemUtil;
 
 public class PatternTest {
 
@@ -53,7 +53,12 @@ public class PatternTest {
 
 		Matcher m = p.matcher(str);
 		assertTrue(m.find());
-		String strRes = new StringBuilder(str).replace(m.start(1), m.end(1), StringBuilderPlus.LINE_SEP).toString();
-		assertEquals(strExpected, strRes);
+		String strRes = new StringBuilder(str).replace(m.start(1), m.end(1), SystemUtil.LINE_SEP).toString();
+		assertEquals(clean(strExpected), clean(strRes));
+	}
+
+	public String clean(String str) {
+		str = str.replaceAll("[\\r\\n]+", "");
+		return str;
 	}
 }

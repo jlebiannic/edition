@@ -73,7 +73,7 @@ public class Edition {
 			Matcher m = POUR_FORMATAGE_PAGE_IMPR.matcher(contentWithNumPage);
 			if (m.find()) {
 				contentWithNumPage = new StringBuilder(contentWithNumPage)
-						.replace(m.start(1), m.end(1), StringBuilderPlus.LINE_SEP).toString();
+						.replace(m.start(1), m.end(1), SystemUtil.LINE_SEP).toString();
 			}
 
 			editionContent.appendLine(contentWithNumPage);

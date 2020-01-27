@@ -17,6 +17,10 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public final class SystemUtil {
+
+	// MODE UNIX (même sous Windows)
+	public static final String LINE_SEP = "\n";
+
 	private SystemUtil() {
 		// empty
 	}

@@ -8,6 +8,7 @@ import java.util.Map;
 import org.junit.jupiter.api.Test;
 
 import fr.mgen.editions.util.StringUtil;
+import fr.mgen.editions.util.SystemUtil;
 
 public class LangTest {
 	@Test
@@ -34,11 +35,11 @@ public class LangTest {
 	@Test
 	public void cutAndBoundTest() {
 		String str = "+lmj03e  364+lps10e  3147+lps11e  2673+lfi511l 1159+lfi531l 95+lfi611l   4";
-		String expected = "+lmj03e  364+lps10e  3147+lps11e  2673+\r\n" + "lfi511l 1159+lfi531l 95+lfi611l   4";
+		String expected = "+lmj03e  364+lps10e  3147+lps11e  2673+" + SystemUtil.LINE_SEP + "lfi511l 1159+lfi531l 95+lfi611l   4";
 		assertEquals(expected, StringUtil.cut(str, "+", 50));
 
 		String str2 = expected;
-		String expected2 = "/*b1re19  +lmj03e  364+lps10e  3147+lps11e  2673+end\r\n"
+		String expected2 = "/*b1re19  +lmj03e  364+lps10e  3147+lps11e  2673+end" + SystemUtil.LINE_SEP
 				+ "/*b1re19  lfi511l 1159+lfi531l 95+lfi611l   4end";
 		assertEquals(expected2, StringUtil.bound(str2, "/*b1re19  ", "end"));
 
