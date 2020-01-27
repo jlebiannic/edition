@@ -239,7 +239,7 @@ public final class EditionFactory {
 
 		editionsGroupees.append(buildEndPageRegroupement(numPage, nbPageGarde + 1));
 
-		return editionsGroupees.toString();
+		return SystemUtil.cleanCRLF(editionsGroupees.toString());
 	}
 
 	/**

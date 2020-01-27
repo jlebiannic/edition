@@ -76,5 +76,11 @@ public final class SystemUtil {
 		}
 		return textBuilder.toString();
 	}
+
+	public static String cleanCRLF(String str) {
+		// Permet de générer correctement les retours à la ligne même si l'exécution
+		// s'effectue sous Windows
+		return str.replaceAll("\r\n", LINE_SEP);
+	}
 }
 
